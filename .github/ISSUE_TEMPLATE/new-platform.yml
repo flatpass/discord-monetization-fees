@@ -1,0 +1,55 @@
+name: New platform
+description: Suggest a platform this dataset should cover.
+title: "[new platform] "
+labels: ["new platform"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Published fees and payout terms only. A platform with no publicly stated
+        fees can still be added, as an unverified entry recording what was attempted.
+  - type: input
+    id: name
+    attributes:
+      label: Platform name
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Website
+      placeholder: "https://example.com"
+    validations:
+      required: true
+  - type: input
+    id: pricing_url
+    attributes:
+      label: Pricing page URL
+      description: The platform's own. If it has none, write "none" and say where the fees are stated.
+    validations:
+      required: true
+  - type: checkboxes
+    id: gates
+    attributes:
+      label: What it gates
+      options:
+        - label: Discord
+        - label: Telegram
+        - label: Slack
+        - label: Other (say which below)
+    validations:
+      required: false
+  - type: textarea
+    id: fees
+    attributes:
+      label: Fee summary
+      description: Monthly fee, percentage per sale and its scope, card processing and whose rate it is, payout fees and terms. Write "not stated" for anything the platform does not publish.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Source URL(s) and the date you read them
+      description: One per line. The platform's own pages only.
+    validations:
+      required: true

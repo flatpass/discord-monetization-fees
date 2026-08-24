@@ -1,0 +1,921 @@
+{
+  "schema_version": 1,
+  "updated": "2026-08-23",
+  "license": "CC-BY-4.0",
+  "maintainer": { "name": "flatpass", "url": "https://flatpass.io" },
+  "conventions": {
+    "basis": "all-in",
+    "headline_processing": "stripe-us",
+    "avg_membership_price_usd": 35
+  },
+  "platforms": [
+    {
+      "id": "whop",
+      "name": "Whop",
+      "website": "https://whop.com",
+      "pricing_url": "https://whop.com/network/pricing",
+      "category": "marketplace",
+      "gates": ["discord", "telegram", "tradingview"],
+      "verified_on": "2026-08-03",
+      "verification": "direct-confirmation",
+      "monthly_fee_usd": 0,
+      "pct_of_sale": 3.0,
+      "pct_scope": "sales through an automation (Discord, Telegram, TradingView gating)",
+      "processing": {
+        "by": "platform",
+        "pct": 2.7,
+        "fixed_usd": 0.3,
+        "notes": "+1.5% non-US cards, +1% currency conversion, ACH acceptance 1.5% capped at $5"
+      },
+      "settles_in": "platform_balance",
+      "payout_fees": [
+        { "method": "ACH next-day", "fixed_usd": 2.5, "pct": 0 },
+        { "method": "instant", "fixed_usd": 1, "pct": 4 },
+        { "method": "Venmo / Cash App / crypto", "fixed_usd": 1, "pct": 5 },
+        { "method": "wire", "fixed_usd": 23, "pct": 0 }
+      ],
+      "payout_terms": null,
+      "other_fees": [
+        "financed sales (Klarna / Afterpay) 15% per transaction",
+        "optional payment orchestration ~0.8% per transaction",
+        "optional billing automation ~0.5% per transaction",
+        "optional tax handling ~0.5% per transaction"
+      ],
+      "notes": [
+        "The 3% automation fee is not on Whop's public pricing page.",
+        "All-in on a domestic Discord-gated sale is 5.7% + $0.30.",
+        "The 30% marketplace commission was removed in May 2025; Discover sales now pay the same rates as direct sales."
+      ],
+      "sources": [
+        {
+          "url": "https://whop.com/network/pricing",
+          "retrieved": "2026-08-02",
+          "quote": "No verbatim quote was recorded at retrieval.",
+          "type": "primary"
+        },
+        {
+          "url": "https://docs.whop.com/fees",
+          "retrieved": "2026-08-02",
+          "quote": "No verbatim quote was recorded at retrieval.",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "id": "launchpass",
+      "name": "LaunchPass",
+      "website": "https://launchpass.com",
+      "pricing_url": "https://launchpass.com",
+      "category": "discord-native",
+      "gates": ["discord", "telegram", "slack"],
+      "verified_on": "2026-08-02",
+      "verification": "primary",
+      "monthly_fee_usd": null,
+      "tiers": [
+        {
+          "name": "Free",
+          "monthly_usd": 0,
+          "cap": null,
+          "cap_unit": null,
+          "pct_of_sale": null
+        },
+        {
+          "name": "Premium",
+          "monthly_usd": 29,
+          "cap": null,
+          "cap_unit": null,
+          "pct_of_sale": 3.5
+        },
+        {
+          "name": "Ultra",
+          "monthly_usd": null,
+          "cap": null,
+          "cap_unit": null,
+          "pct_of_sale": 3.5
+        }
+      ],
+      "pct_of_sale": 3.5,
+      "pct_scope": "every sale on the Premium plan; billed per community",
+      "processing": {
+        "by": "seller_stripe",
+        "pct": null,
+        "fixed_usd": null,
+        "notes": "Stripe's rate on the seller's own connected account, additional to the 3.5%"
+      },
+      "settles_in": "seller_account",
+      "payout_fees": [],
+      "payout_terms": null,
+      "other_fees": [
+        "12.5% for owners who downgrade from Premium to Free",
+        "annual Premium billed at $499"
+      ],
+      "notes": [
+        "The Free plan cannot charge members.",
+        "Premium is billed per community, so two servers cost twice.",
+        "LaunchPass's own worked example gives 6.4% + $0.30 all-in, which is 3.5% plus Stripe's US 2.9%."
+      ],
+      "sources": [
+        {
+          "url": "https://help.launchpass.com",
+          "retrieved": "2026-08-02",
+          "quote": "Total Fees ≈ Member Payment × 6.4% + $0.30",
+          "type": "primary"
+        },
+        {
+          "url": "https://launchpass.com",
+          "retrieved": "2026-08-02",
+          "quote": "No verbatim quote was recorded at retrieval.",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "id": "flatpass",
+      "name": "flatpass",
+      "website": "https://flatpass.io",
+      "pricing_url": "https://flatpass.io/pricing",
+      "category": "discord-native",
+      "gates": ["discord"],
+      "verified_on": "2026-08-23",
+      "verification": "primary",
+      "monthly_fee_usd": null,
+      "tiers": [
+        {
+          "name": "Free",
+          "monthly_usd": 0,
+          "cap": 15,
+          "cap_unit": "paid_members",
+          "pct_of_sale": 0
+        },
+        {
+          "name": "Starter",
+          "monthly_usd": 29,
+          "cap": 80,
+          "cap_unit": "paid_members",
+          "pct_of_sale": 0
+        },
+        {
+          "name": "Growth",
+          "monthly_usd": 79,
+          "cap": 200,
+          "cap_unit": "paid_members",
+          "pct_of_sale": 0
+        },
+        {
+          "name": "Scale",
+          "monthly_usd": 149,
+          "cap": 750,
+          "cap_unit": "paid_members",
+          "pct_of_sale": 0
+        },
+        {
+          "name": "Max",
+          "monthly_usd": 399,
+          "cap": null,
+          "cap_unit": "paid_members",
+          "pct_of_sale": 0
+        }
+      ],
+      "pct_of_sale": 0,
+      "pct_scope": "none at any rung",
+      "processing": {
+        "by": "seller_stripe",
+        "pct": null,
+        "fixed_usd": null,
+        "notes": "Stripe Connect direct charges on the seller's own account, at that account's country pricing"
+      },
+      "settles_in": "seller_account",
+      "payout_fees": [],
+      "payout_terms": null,
+      "other_fees": [],
+      "notes": [
+        "Metered on active paid members, not sales volume and not Discord headcount.",
+        "Discord only. No annual platform plan.",
+        "Whop is cheaper all-in below about $1,036/month in sales, which is 16-29 paid members at a modelled $35 average price.",
+        "Subscord is cheaper at 81-500 active subscriptions ($65 against $79 and $149) and above 750 ($199 against $399)."
+      ],
+      "sources": [
+        {
+          "url": "https://flatpass.io/pricing",
+          "retrieved": "2026-08-23",
+          "quote": "0% of your revenue — the only meter is active paid members.",
+          "type": "primary"
+        },
+        {
+          "url": "https://flatpass.io/pricing",
+          "retrieved": "2026-08-23",
+          "quote": "And past $1,036 a month in sales, it's also cheaper — permanently.",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "id": "subscord",
+      "name": "Subscord",
+      "website": "https://subscord.com",
+      "pricing_url": "https://subscord.com/#pricing",
+      "category": "discord-native",
+      "gates": ["discord"],
+      "verified_on": "2026-08-23",
+      "verification": "primary",
+      "monthly_fee_usd": null,
+      "tiers": [
+        {
+          "name": "Free",
+          "monthly_usd": 0,
+          "cap": 10,
+          "cap_unit": "active_subscribers",
+          "pct_of_sale": 0
+        },
+        {
+          "name": "Pro",
+          "monthly_usd": 39,
+          "cap": 50,
+          "cap_unit": "active_subscribers",
+          "pct_of_sale": 0
+        },
+        {
+          "name": "Max",
+          "monthly_usd": 65,
+          "cap": 500,
+          "cap_unit": "active_subscribers",
+          "pct_of_sale": 0
+        },
+        {
+          "name": "Unlimited",
+          "monthly_usd": 199,
+          "cap": null,
+          "cap_unit": "active_subscribers",
+          "pct_of_sale": 0
+        }
+      ],
+      "pct_of_sale": 0,
+      "pct_scope": "0% platform fee on card sales; 0.5% plus gas on crypto payments",
+      "processing": {
+        "by": "seller_stripe",
+        "pct": 2.9,
+        "fixed_usd": 0.3,
+        "notes": "Stripe, stated on Subscord's own pricing section as 2.9% + $0.30"
+      },
+      "settles_in": "seller_account",
+      "payout_fees": [],
+      "payout_terms": null,
+      "other_fees": ["0.5% plus gas on crypto payments"],
+      "notes": [
+        "The ladder read on 2026-08-23 is identical to the one read on 2026-08-05.",
+        "Subscord connects to Stripe by asking the seller to paste their Stripe public and secret API keys, per its setup documentation as read on 2026-08-05."
+      ],
+      "sources": [
+        {
+          "url": "https://subscord.com",
+          "retrieved": "2026-08-23",
+          "quote": "0% platform fees",
+          "type": "primary"
+        },
+        {
+          "url": "https://subscord.com",
+          "retrieved": "2026-08-23",
+          "quote": "Free $0/month Up to 10 active subscribers; Pro $39/month Up to 50; Max $65/month Up to 500; Unlimited $199/month",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "id": "paybot",
+      "name": "PayBot",
+      "website": "https://paybotapp.com",
+      "pricing_url": "https://paybotapp.com",
+      "category": "discord-native",
+      "gates": ["discord"],
+      "verified_on": "2026-08-23",
+      "verification": "primary",
+      "monthly_fee_usd": 0,
+      "pct_of_sale": 3.0,
+      "pct_scope": "every sale",
+      "processing": {
+        "by": "seller_stripe",
+        "pct": null,
+        "fixed_usd": null,
+        "notes": "Stripe's rate on the seller's own account, connected over OAuth; PayBot publishes no processing rate of its own"
+      },
+      "settles_in": "seller_account",
+      "payout_fees": [],
+      "payout_terms": "PayBot states funds land in the seller's own Stripe as the sale clears; no schedule or minimum is published",
+      "other_fees": [],
+      "notes": [
+        "No monthly fee and no separate pricing page; the rate is stated on the homepage."
+      ],
+      "sources": [
+        {
+          "url": "https://paybotapp.com",
+          "retrieved": "2026-08-23",
+          "quote": "Just 3% when you make a sale",
+          "type": "primary"
+        },
+        {
+          "url": "https://paybotapp.com",
+          "retrieved": "2026-08-23",
+          "quote": "No monthly fee, no seat pricing, no trial",
+          "type": "primary"
+        },
+        {
+          "url": "https://paybotapp.com/whop-alternative/",
+          "retrieved": "2026-08-23",
+          "quote": "Direct to your own Stripe, the moment a sale clears",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "id": "doorfee",
+      "name": "DoorFee",
+      "website": "https://doorfee.io",
+      "pricing_url": "https://doorfee.io/#pricing",
+      "category": "discord-native",
+      "gates": ["discord"],
+      "verified_on": "2026-08-23",
+      "verification": "primary",
+      "monthly_fee_usd": null,
+      "tiers": [
+        {
+          "name": "Free",
+          "monthly_usd": 0,
+          "cap": null,
+          "cap_unit": null,
+          "pct_of_sale": 10
+        },
+        {
+          "name": "Pro",
+          "monthly_usd": 28,
+          "cap": null,
+          "cap_unit": null,
+          "pct_of_sale": 2.5
+        }
+      ],
+      "pct_of_sale": null,
+      "pct_scope": "10% on the Free plan, 2.5% on Pro, both on top of Stripe's processing",
+      "processing": {
+        "by": "seller_stripe",
+        "pct": null,
+        "fixed_usd": null,
+        "notes": "Stripe Connect; platform fees are deducted in addition to Stripe's processing fees"
+      },
+      "settles_in": "seller_account",
+      "payout_fees": [],
+      "payout_terms": null,
+      "other_fees": ["Pro billed annually at $236"],
+      "notes": [
+        "The terms contain no holds or reserves language, as read on 2026-08-23."
+      ],
+      "sources": [
+        {
+          "url": "https://doorfee.io",
+          "retrieved": "2026-08-23",
+          "quote": "$28/month; $236/year (save $100); Only 2.5% transaction fee; Free $0/month with 10% transaction fee",
+          "type": "primary"
+        },
+        {
+          "url": "https://doorfee.io/terms",
+          "retrieved": "2026-08-23",
+          "quote": "Payouts are made directly to the Client's connected Stripe account.",
+          "type": "primary"
+        },
+        {
+          "url": "https://doorfee.io/terms",
+          "retrieved": "2026-08-23",
+          "quote": "platform fees (2.5% for Pro, 10% for Free) are deducted from transactions in addition to Stripe's processing fees",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "id": "sublyna",
+      "name": "Sublyna",
+      "website": "https://www.sublyna.com",
+      "pricing_url": "https://www.sublyna.com/pricing",
+      "category": "discord-native",
+      "gates": ["discord", "telegram"],
+      "verified_on": null,
+      "verification": "unverified",
+      "monthly_fee_usd": null,
+      "pct_of_sale": null,
+      "pct_scope": null,
+      "processing": {
+        "by": null,
+        "pct": null,
+        "fixed_usd": null,
+        "notes": "not stated"
+      },
+      "settles_in": null,
+      "payout_fees": [],
+      "payout_terms": null,
+      "other_fees": [],
+      "notes": [
+        "The pricing page could not be fetched automatically on 2026-08-23: it returned only its heading, and the plan table did not render to a fetcher.",
+        "https://sublyna.com/pricing returns HTTP 404; the site serves from the www host.",
+        "No fee figure here meets this repo's sourcing bar, so none is stated."
+      ],
+      "sources": [
+        {
+          "url": "https://www.sublyna.com/pricing",
+          "retrieved": "2026-08-23",
+          "quote": "Start free. Upgrade as you grow.",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "id": "xoe",
+      "name": "XOE",
+      "website": "https://xoe.gg",
+      "pricing_url": "https://xoe.gg/premium",
+      "category": "discord-native",
+      "gates": ["discord"],
+      "verified_on": "2026-08-23",
+      "verification": "primary",
+      "monthly_fee_usd": 0,
+      "pct_of_sale": 0,
+      "pct_scope": "0% on card payments; 5% on crypto payments (USDC on Base and Solana)",
+      "processing": {
+        "by": "seller_stripe",
+        "pct": null,
+        "fixed_usd": null,
+        "notes": "Stripe's standard processing on the seller's own account; XOE adds nothing on card sales"
+      },
+      "settles_in": "seller_account",
+      "payout_fees": [],
+      "payout_terms": "card payouts to the seller's Stripe account, crypto payouts to the seller's wallet; no schedule or minimum stated",
+      "other_fees": ["network gas on crypto payments"],
+      "notes": [
+        "The two rails carry different rates: cards are 0% to XOE, crypto is 5%."
+      ],
+      "sources": [
+        {
+          "url": "https://xoe.gg",
+          "retrieved": "2026-08-23",
+          "quote": "0% XOE fee on cards, no subscription, no setup fees",
+          "type": "primary"
+        },
+        {
+          "url": "https://xoe.gg/premium",
+          "retrieved": "2026-08-23",
+          "quote": "Crypto payments on Base Eth & Solana (5% fee)",
+          "type": "primary"
+        },
+        {
+          "url": "https://xoe.gg/premium",
+          "retrieved": "2026-08-23",
+          "quote": "Crypto payouts go to your wallet; card payouts to your Stripe account",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "id": "upgrade-chat",
+      "name": "Upgrade.chat",
+      "website": "https://upgrade.chat",
+      "pricing_url": "https://upgrade.chat/pricing",
+      "category": "discord-native",
+      "gates": ["discord"],
+      "verified_on": null,
+      "verification": "unverified",
+      "monthly_fee_usd": null,
+      "pct_of_sale": null,
+      "pct_scope": "not stated; the site states \"Starting at 2.9%\", which is a floor rather than a rate",
+      "processing": {
+        "by": null,
+        "pct": null,
+        "fixed_usd": null,
+        "notes": "not stated"
+      },
+      "settles_in": null,
+      "payout_fees": [],
+      "payout_terms": "the site describes daily payouts via PayPal or Stripe; no minimum stated",
+      "other_fees": [],
+      "notes": [
+        "The pricing page rendered a Monthly / Lifetime toggle but no plan names or prices to an automated fetcher on 2026-08-23.",
+        "A volume rate discount is offered above $50K/month in gross revenue."
+      ],
+      "sources": [
+        {
+          "url": "https://upgrade.chat",
+          "retrieved": "2026-08-23",
+          "quote": "Upgrade.chat Starting at 2.9%",
+          "type": "primary"
+        },
+        {
+          "url": "https://upgrade.chat",
+          "retrieved": "2026-08-23",
+          "quote": "100% Free to Start for Server Owners",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "id": "discord-server-subscriptions",
+      "name": "Discord Server Subscriptions",
+      "website": "https://discord.com",
+      "pricing_url": "https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms",
+      "category": "native",
+      "gates": ["discord"],
+      "verified_on": "2026-08-03",
+      "verification": "primary",
+      "monthly_fee_usd": 0,
+      "pct_of_sale": 10.0,
+      "pct_scope": "Platform Fee on every transaction type",
+      "processing": {
+        "by": "platform",
+        "pct": 6.0,
+        "fixed_usd": null,
+        "notes": "6% on desktop and browser. iOS App Store 30% (15% on retained auto-renewing subscriptions) and Google Play 15% auto-renewing / 30% other are both marked not currently available; store fees are added to the buyer's price."
+      },
+      "settles_in": "platform_balance",
+      "payout_fees": [],
+      "payout_terms": "within 45 days of month end per Schedule 1; the Creator Revenue FAQ describes practice as on or before the 15th of the following month. $100 minimum first payout, $25 subsequent.",
+      "other_fees": [],
+      "notes": [
+        "All-in on a desktop or browser sale is 16%: 10% Platform Fee plus 6% payment processing.",
+        "The widely quoted 90/10 split is the Platform Fee alone.",
+        "US only, per the Creator Revenue FAQ. Requirements are on the account, not the server, and include two-factor authentication and US-based banking information.",
+        "A new, separate Stripe account is required; an existing one cannot be connected.",
+        "No member-count or server-age requirement appears in either document.",
+        "Both Discord URLs return 403 to an automated fetcher and were read in a browser."
+      ],
+      "sources": [
+        {
+          "url": "https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms",
+          "retrieved": "2026-08-03",
+          "quote": "Schedule 1: Desktop App & Browser — payment processing 6%, platform fee 10%.",
+          "type": "primary"
+        },
+        {
+          "url": "https://creator-support.discord.com/hc/en-us/articles/10424143128343-Creator-Revenue-FAQ",
+          "retrieved": "2026-08-03",
+          "quote": "Server Subscriptions will not be available outside of the United States.",
+          "type": "primary"
+        },
+        {
+          "url": "https://creator-support.discord.com/hc/en-us/articles/10424143128343-Creator-Revenue-FAQ",
+          "retrieved": "2026-08-03",
+          "quote": "our implementation with Stripe requires you to create a new, separate account for Discord",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "id": "patreon",
+      "name": "Patreon",
+      "website": "https://www.patreon.com",
+      "pricing_url": "https://www.patreon.com/pricing",
+      "category": "creator",
+      "gates": ["discord"],
+      "verified_on": "2026-08-03",
+      "verification": "primary",
+      "monthly_fee_usd": 0,
+      "pct_of_sale": 10.0,
+      "pct_scope": "creator income, on the single published plan",
+      "processing": {
+        "by": "platform",
+        "pct": null,
+        "fixed_usd": null,
+        "notes": "Patreon's own, additional to the 10%; the rate was not captured at retrieval and is not guessed here"
+      },
+      "settles_in": "platform_balance",
+      "payout_fees": [],
+      "payout_terms": null,
+      "other_fees": ["currency conversion", "payout fees"],
+      "notes": [
+        "One plan, not tiers. The 8% / 12% plan structure is retired.",
+        "The 10% is a platform fee; processing, conversion and payout fees are charged separately."
+      ],
+      "sources": [
+        {
+          "url": "https://www.patreon.com/pricing",
+          "retrieved": "2026-08-03",
+          "quote": "No verbatim quote was recorded at retrieval.",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "id": "ko-fi",
+      "name": "Ko-fi",
+      "website": "https://ko-fi.com",
+      "pricing_url": "https://ko-fi.com/pricing",
+      "category": "creator",
+      "gates": ["discord"],
+      "verified_on": "2026-08-03",
+      "verification": "primary",
+      "monthly_fee_usd": 0,
+      "pct_of_sale": 5.0,
+      "pct_scope": "memberships and shop sales; 0% on tips; waived on the paid Gold plan",
+      "processing": {
+        "by": "seller_paypal_or_stripe",
+        "pct": null,
+        "fixed_usd": null,
+        "notes": "the seller's own PayPal or Stripe account"
+      },
+      "settles_in": "seller_account",
+      "payout_fees": [],
+      "payout_terms": null,
+      "other_fees": [],
+      "notes": [
+        "Gold's monthly price is not stated here: it is quoted as both $6 and $12 across 2026 guides and no reading of Ko-fi's own page has settled which applies to a new seller.",
+        "ko-fi.com/pricing returns 403 to an automated fetcher and was read in a browser."
+      ],
+      "sources": [
+        {
+          "url": "https://ko-fi.com/pricing",
+          "retrieved": "2026-08-03",
+          "quote": "No verbatim quote was recorded at retrieval.",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "id": "skool",
+      "name": "Skool",
+      "website": "https://www.skool.com",
+      "pricing_url": "https://www.skool.com/pricing",
+      "category": "membership",
+      "gates": [],
+      "verified_on": "2026-08-23",
+      "verification": "primary",
+      "monthly_fee_usd": null,
+      "tiers": [
+        {
+          "name": "Hobby",
+          "monthly_usd": 9,
+          "cap": null,
+          "cap_unit": null,
+          "pct_of_sale": 10
+        },
+        {
+          "name": "Pro",
+          "monthly_usd": 99,
+          "cap": null,
+          "cap_unit": null,
+          "pct_of_sale": 2.9
+        }
+      ],
+      "pct_of_sale": null,
+      "pct_scope": "transaction fee: 10% on Hobby, 2.9% on Pro",
+      "processing": {
+        "by": "platform",
+        "pct": null,
+        "fixed_usd": null,
+        "notes": "no separate processing line is published; the transaction fee is stated as a single percentage"
+      },
+      "settles_in": null,
+      "payout_fees": [],
+      "payout_terms": null,
+      "other_fees": ["a yearly billing option is offered as two months free"],
+      "notes": [
+        "Skool hosts the community itself rather than gating a Discord server.",
+        "A 2026-08-02 reading described Pro as 2.9% + $0.30 rising to 3.9% + $0.30 above $899. Neither appears on the page as read on 2026-08-23."
+      ],
+      "sources": [
+        {
+          "url": "https://www.skool.com/pricing",
+          "retrieved": "2026-08-23",
+          "quote": "Hobby $9/month, 10% transaction fee; Pro $99/month, 2.9% transaction fee",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "id": "gumroad",
+      "name": "Gumroad",
+      "website": "https://gumroad.com",
+      "pricing_url": "https://gumroad.com/pricing",
+      "category": "creator",
+      "gates": [],
+      "verified_on": "2026-08-23",
+      "verification": "primary",
+      "monthly_fee_usd": 0,
+      "pct_of_sale": 10.0,
+      "pct_scope": "direct sales; sales originated by Gumroad's Discover marketplace are 30%",
+      "processing": {
+        "by": "platform",
+        "pct": null,
+        "fixed_usd": 0.5,
+        "notes": "no separate processing line is published; the fee is stated as 10% + $0.50"
+      },
+      "settles_in": "platform_balance",
+      "payout_fees": [],
+      "payout_terms": "paid by direct deposit or PayPal, varying by country; no schedule or minimum stated",
+      "other_fees": ["30% on Discover marketplace sales"],
+      "notes": [
+        "Gumroad sells the product; it does not gate a Discord server by itself."
+      ],
+      "sources": [
+        {
+          "url": "https://gumroad.com/pricing",
+          "retrieved": "2026-08-23",
+          "quote": "10% + $0.50",
+          "type": "primary"
+        },
+        {
+          "url": "https://gumroad.com/pricing",
+          "retrieved": "2026-08-23",
+          "quote": "Gumroad doesn't charge you a monthly fee. Instead, our fees are deducted as a small percentage of every sale",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "id": "memberful",
+      "name": "Memberful",
+      "website": "https://memberful.com",
+      "pricing_url": "https://memberful.com/pricing",
+      "category": "membership",
+      "gates": ["discord"],
+      "verified_on": "2026-08-23",
+      "verification": "primary",
+      "monthly_fee_usd": null,
+      "tiers": [
+        {
+          "name": "Standard",
+          "monthly_usd": 49,
+          "cap": null,
+          "cap_unit": null,
+          "pct_of_sale": 4.9
+        },
+        {
+          "name": "Enterprise",
+          "monthly_usd": null,
+          "cap": null,
+          "cap_unit": null,
+          "pct_of_sale": null
+        }
+      ],
+      "pct_of_sale": 4.9,
+      "pct_scope": "transaction fee on the Standard plan",
+      "processing": {
+        "by": "seller_stripe",
+        "pct": null,
+        "fixed_usd": null,
+        "notes": "Stripe's rate on the seller's own connected account, additional to the 4.9%"
+      },
+      "settles_in": "seller_account",
+      "payout_fees": [],
+      "payout_terms": null,
+      "other_fees": [],
+      "notes": [
+        "A free trial rather than a free plan: charging starts when the seller goes live and takes payments.",
+        "A 2026-08-02 reading described a free plan with paid tiers above it; the page as read on 2026-08-23 shows one published paid plan plus a custom Enterprise tier."
+      ],
+      "sources": [
+        {
+          "url": "https://memberful.com/pricing",
+          "retrieved": "2026-08-23",
+          "quote": "Standard $49 / month + 4.9% transaction fee",
+          "type": "primary"
+        },
+        {
+          "url": "https://memberful.com/docs/overview/getting-started/payment-processing.md",
+          "retrieved": "2026-08-23",
+          "quote": "Memberful uses Stripe to process credit card payments. Connect a Stripe account to accept payments, manage payouts, and handle disputes for your subscriptions",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "id": "circle",
+      "name": "Circle",
+      "website": "https://circle.so",
+      "pricing_url": "https://circle.so/pricing",
+      "category": "membership",
+      "gates": [],
+      "verified_on": "2026-08-23",
+      "verification": "primary",
+      "monthly_fee_usd": null,
+      "tiers": [
+        {
+          "name": "Professional",
+          "monthly_usd": 89,
+          "cap": null,
+          "cap_unit": null,
+          "pct_of_sale": 2
+        },
+        {
+          "name": "Business",
+          "monthly_usd": 199,
+          "cap": null,
+          "cap_unit": null,
+          "pct_of_sale": 1
+        },
+        {
+          "name": "Circle Plus",
+          "monthly_usd": null,
+          "cap": null,
+          "cap_unit": null,
+          "pct_of_sale": 0.5
+        }
+      ],
+      "pct_of_sale": null,
+      "pct_scope": "transaction fee on paid memberships: 2% Professional, 1% Business, 0.5% Circle Plus",
+      "processing": {
+        "by": null,
+        "pct": null,
+        "fixed_usd": null,
+        "notes": "not stated on the pricing page"
+      },
+      "settles_in": null,
+      "payout_fees": [],
+      "payout_terms": null,
+      "other_fees": [],
+      "notes": [
+        "Circle hosts the community itself rather than gating a Discord server.",
+        "The pricing page states no card processing rate, so an all-in cost cannot be computed from it.",
+        "A secondary source read on 2026-08-02 put Circle at roughly 7% on some plans; the published tiers as read on 2026-08-23 are 2% / 1% / 0.5%."
+      ],
+      "sources": [
+        {
+          "url": "https://circle.so/pricing",
+          "retrieved": "2026-08-23",
+          "quote": "Professional $89/mo, 2%; Business $199/mo, 1%; Circle Plus custom pricing, 0.5%",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "id": "tribute",
+      "name": "Tribute",
+      "website": "https://tribute.tg",
+      "pricing_url": "https://tribute.tg",
+      "category": "creator",
+      "gates": ["telegram"],
+      "verified_on": "2026-08-23",
+      "verification": "primary",
+      "monthly_fee_usd": 0,
+      "pct_of_sale": 10.0,
+      "pct_scope": "commission on donations and subscriptions",
+      "processing": {
+        "by": "platform",
+        "pct": null,
+        "fixed_usd": null,
+        "notes": "no separate processing line is published; the commission is stated as a single 10%"
+      },
+      "settles_in": "platform_balance",
+      "payout_fees": [],
+      "payout_terms": "paid on the 25th and the 10th (or the next business day), covering the 1st-15th and 16th-31st. Bank card payout minimum EUR 100 or 3,000 rubles; below that the balance carries forward.",
+      "other_fees": [],
+      "notes": [
+        "Telegram, not Discord. Included because it competes for the same searches.",
+        "Payment limits: minimum EUR 1 or 100 rubles, maximum EUR 3,000 or 300,000 rubles.",
+        "The site as read on 2026-08-23 is in Russian."
+      ],
+      "sources": [
+        {
+          "url": "https://tribute.tg",
+          "retrieved": "2026-08-23",
+          "quote": "Только 10% комиссии и никаких скрытых сборов.",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe",
+      "website": "https://stripe.com",
+      "pricing_url": "https://stripe.com/pricing",
+      "category": "processor",
+      "gates": [],
+      "verified_on": "2026-08-03",
+      "verification": "primary",
+      "monthly_fee_usd": 0,
+      "pct_of_sale": null,
+      "pct_scope": "none; Stripe is the processing line, not a platform fee",
+      "processing": {
+        "by": "platform",
+        "pct": 2.9,
+        "fixed_usd": 0.3,
+        "notes": "US standard. Standard EEA 1.5% + EUR 0.25; UK 2.5% + EUR 0.25; international 3.15% + EUR 0.25; +2% when currency conversion is required."
+      },
+      "settles_in": "seller_account",
+      "payout_fees": [],
+      "payout_terms": null,
+      "other_fees": ["+2% currency conversion"],
+      "notes": [
+        "A seller on their own Stripe account pays their own country's Stripe pricing, not the platform's.",
+        "Platforms that process their own cards carry their own rate wherever the seller is.",
+        "Headline arithmetic in this repo uses the US rate so one basis runs through every comparison."
+      ],
+      "sources": [
+        {
+          "url": "https://stripe.com/pricing",
+          "retrieved": "2026-08-03",
+          "quote": "No verbatim quote was recorded at retrieval.",
+          "type": "primary"
+        },
+        {
+          "url": "https://stripe.com/en-de/pricing",
+          "retrieved": "2026-08-03",
+          "quote": "No verbatim quote was recorded at retrieval.",
+          "type": "primary"
+        }
+      ]
+    }
+  ]
+}

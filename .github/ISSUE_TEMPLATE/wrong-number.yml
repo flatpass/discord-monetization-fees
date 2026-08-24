@@ -1,0 +1,75 @@
+name: Wrong number
+description: A fee, rate or payout term in this repo does not match what the platform states.
+title: "[wrong number] "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for checking. Only the platform's own pages count as a source — its
+        pricing page, help centre, docs or terms. A competitor's comparison page,
+        a listicle or a fee guide does not.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Which row is wrong.
+      options:
+        - whop
+        - launchpass
+        - discord-server-subscriptions
+        - flatpass
+        - subscord
+        - paybot
+        - doorfee
+        - sublyna
+        - xoe
+        - upgrade-chat
+        - patreon
+        - ko-fi
+        - skool
+        - gumroad
+        - memberful
+        - circle
+        - tribute
+        - stripe
+    validations:
+      required: true
+  - type: input
+    id: stated_here
+    attributes:
+      label: The number as stated in this repo
+      description: Quote the field or table cell you are disputing.
+      placeholder: "Card processing: 2.7% + $0.30"
+    validations:
+      required: true
+  - type: input
+    id: stated_there
+    attributes:
+      label: The number the platform states
+      description: What its own page says today. If the platform states nothing, write "not stated".
+      placeholder: "2.9% + $0.30"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL of the platform's own page
+      description: Pricing page, help centre, docs or terms. Not a comparison page.
+      placeholder: "https://example.com/pricing"
+    validations:
+      required: true
+  - type: input
+    id: date_seen
+    attributes:
+      label: Date you saw it
+      placeholder: "2026-08-23"
+    validations:
+      required: true
+  - type: textarea
+    id: anything_else
+    attributes:
+      label: Anything else
+      description: Scope, a screenshot, a section number in the terms, or how you would like to be credited in the changelog.
+    validations:
+      required: false
