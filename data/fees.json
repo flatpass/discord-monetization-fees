@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-08-23",
+  "updated": "2026-08-24",
   "license": "CC-BY-4.0",
   "maintainer": { "name": "flatpass", "url": "https://flatpass.io" },
   "conventions": {
@@ -613,24 +613,26 @@
       "pricing_url": "https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms",
       "category": "native",
       "gates": ["discord"],
-      "verified_on": "2026-08-03",
+      "verified_on": "2026-08-24",
       "verification": "primary",
       "monthly_fee_usd": 0,
       "pct_of_sale": 10.0,
-      "pct_scope": "Platform Fee on every transaction type",
+      "pct_scope": "Platform Fee on every transaction type, charged on the payment after taxes, processing and transaction fees come off — 9.4% of a gross desktop or browser sale",
+      "pct_base": "net_of_processing",
       "processing": {
         "by": "platform",
         "pct": 6.0,
         "fixed_usd": null,
-        "notes": "6% on desktop and browser. iOS App Store 30% (15% on retained auto-renewing subscriptions) and Google Play 15% auto-renewing / 30% other are both marked not currently available; store fees are added to the buyer's price."
+        "notes": "6% on desktop and browser, and this one is a percentage of the gross payment. iOS App Store 30% (15% on retained auto-renewing subscriptions) and Google Play 15% auto-renewing / 30% other are both marked not currently available; store fees are added to the buyer's price."
       },
       "settles_in": "platform_balance",
       "payout_fees": [],
       "payout_terms": "within 45 days of month end per Schedule 1; the Creator Revenue FAQ describes practice as on or before the 15th of the following month. $100 minimum first payout, $25 subsequent.",
       "other_fees": [],
       "notes": [
-        "All-in on a desktop or browser sale is 16%: 10% Platform Fee plus 6% payment processing.",
-        "The widely quoted 90/10 split is the Platform Fee alone.",
+        "All-in on a desktop or browser sale is 15.4%, not 16%: the two rates have different bases. The 6% Payment Processing Fee comes off the gross payment, then the 10% Platform Fee is charged on what remains, which is 9.4% of gross. On a $10 sale: $0.60 processing, then 10% of $9.40 = $0.94, and the seller keeps $8.46.",
+        "The bases are stated in the Fees section above Schedule 1, not in the rate table itself — Payment Processing Fees are a percentage of the total payments from a user, while the Platform Fee is a percentage of those payments less applicable transaction taxes, Payment Processing Fees and Transaction Fees.",
+        "The widely quoted 90/10 split is the Platform Fee alone, and it is genuinely 10% — of the post-processing remainder.",
         "US only, per the Creator Revenue FAQ. Requirements are on the account, not the server, and include two-factor authentication and US-based banking information.",
         "A new, separate Stripe account is required; an existing one cannot be connected.",
         "No member-count or server-age requirement appears in either document.",
@@ -641,6 +643,12 @@
           "url": "https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms",
           "retrieved": "2026-08-03",
           "quote": "Schedule 1: Desktop App & Browser — payment processing 6%, platform fee 10%.",
+          "type": "primary"
+        },
+        {
+          "url": "https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms",
+          "retrieved": "2026-08-24",
+          "quote": "Fees section, above Schedule 1: Payment Processing Fees are \"calculated as a percentage of the total payments from a user\", while the Platform Fee is calculated as a percentage of the total payments from a user \"less applicable transaction taxes, Payment Processing Fees, and Transaction Fees\".",
           "type": "primary"
         },
         {

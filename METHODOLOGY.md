@@ -8,7 +8,9 @@ How every number in this repo got here, and the rules that decide whether a numb
 
 The reason this is a rule and not a preference is Discord. Its own processing is 6%, roughly double the 2.7–2.9% everyone else charges, so processing stopped being a constant that divides out of the comparison. Any platform whose processing is not comparable to the rest breaks a platform-fee-only table; Discord already did.
 
-**Platform-fee-only survives only in labeled prose that names its components.** "3% on Discord-gated sales" beside "16% of every sale — the 90/10 split plus 6% processing" is fine, because the reader can see what is in each number. A bare computed figure never uses that basis.
+**Platform-fee-only survives only in labeled prose that names its components.** "3% on Discord-gated sales" beside "15.4% of every sale — 6% processing off the top, then the 90/10 split on what's left" is fine, because the reader can see what is in each number. A bare computed figure never uses that basis.
+
+**Two rates only add when they share a base, and one platform's don't.** Discord's Payment Processing Fee is a percentage of the gross payment; its Platform Fee is a percentage of that payment *less* applicable transaction taxes, Payment Processing Fees and Transaction Fees. So its 10% lands on the 94% that remains — 9.4% of the sale — and the all-in is **15.4%**, not the 16% that adding the two produces. The rate schedule states neither base; the Fees prose above it does. `data/fees.json` records this as `"pct_base": "net_of_processing"` on Discord's row and on no other, and a row without the field is a percentage of the gross sale. This repo published 16% from its first cut until 2026-08-24 (see CHANGELOG), so before writing "X% plus Y%" about any platform, check what each percentage is a percentage of.
 
 **Whose processing rate.** Two shapes, and they behave differently:
 
@@ -58,7 +60,7 @@ It is an assumption, so this repo keeps it out of the load-bearing figures. **Cr
 
 **A fee guide's headline is not a reading of the schedule.** Three live examples of what that gets you:
 
-- Discord's "90/10 split" is the Platform Fee alone. The 6% payment processing is in the same schedule, one row over. Discord's take on a desktop or browser sale is 16%.
+- Discord's "90/10 split" is the Platform Fee alone. The 6% payment processing is in the same schedule, one row over, and Discord's take on a desktop or browser sale is 15.4% — the two rates are charged in sequence, not added, because the Platform Fee's base is the payment after processing comes off. Reading the schedule and not the Fees prose above it is how this repo itself published 16% until 2026-08-24.
 - Whop's 30% marketplace commission was removed in May 2025. Guides still quote it.
 - Patreon's 8% / 12% plan tiers are retired. There is one plan, at 10%.
 

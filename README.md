@@ -4,7 +4,7 @@ A sourced, dated record of what each platform charges to sell paid access to a D
 
 This dataset is maintained by **flatpass** ([flatpass.io](https://flatpass.io)), which sells one of the products in the table below. That is a conflict of interest, so here is how it is handled: every number carries a source URL, a retrieval date and a verification tier; the table includes the rows where flatpass is the more expensive option, and [`platforms/flatpass.md`](platforms/flatpass.md) has a section that names them; corrections are logged in [CHANGELOG.md](CHANGELOG.md) with credit to whoever found them; and anyone can open an issue disputing any figure here. If a number is wrong, the fix is a pull request, not an argument.
 
-Last updated **2026-08-23**.
+Last updated **2026-08-24**.
 
 ## The table
 
@@ -21,7 +21,7 @@ Every row below is either `primary` (read on the platform's own page or terms) o
 | [Sublyna](platforms/sublyna.md) | $0 Starter · $29 Creator · $89 Business [^5] | 5% · 2% · 1% | seller's own Stripe, around 2.9% + $0.30 | seller's Stripe | none | 2026-08-23 | primary |
 | [XOE](platforms/xoe.md) | $0 | 0% cards · 5% crypto | seller's own Stripe | seller's Stripe; crypto to wallet | none stated | 2026-08-23 | primary |
 | [Upgrade.chat](platforms/upgrade-chat.md) | $0 / $19 / $49 / $199 [^6] | 5.9% · 4.9% · 3.9% · 2.9% | seller's own PayPal or Stripe | seller's PayPal or Stripe | none | 2026-08-23 | primary |
-| [Discord Server Subscriptions](platforms/discord-server-subscriptions.md) | $0 | 10% platform fee | own, 6% desktop/browser | Discord | not stated | 2026-08-03 | primary |
+| [Discord Server Subscriptions](platforms/discord-server-subscriptions.md) | $0 | 10% platform fee [^10] | own, 6% desktop/browser | Discord | not stated | 2026-08-24 | primary |
 | [Patreon](platforms/patreon.md) | $0 | 10% | own, 2.9% + $0.30 | Patreon | direct deposit $0.25 · PayPal 1% (min $0.25, cap $20) · Payoneer $1 | 2026-08-23 | primary |
 | [Ko-fi](platforms/ko-fi.md) | $0, or paid Gold [^7] | 0% tips · 5% memberships and shop | seller's own PayPal or Stripe | seller's account | none | 2026-08-03 | primary |
 | [Skool](platforms/skool.md) | $9 Hobby · $99 Pro | 10% Hobby · 2.9% Pro | no separate line published | not stated | not stated | 2026-08-23 | primary |
@@ -40,6 +40,7 @@ Every row below is either `primary` (read on the platform's own page or terms) o
 [^7]: Gold waives the 5%. Its monthly price is quoted as both $6 and $12 across 2026 guides, so this dataset does not state it.
 [^8]: Tribute pays out on the 25th and the 10th, with a €100 minimum for bank card payouts.
 [^9]: Standard EEA 1.5% + €0.25 · UK 2.5% + €0.25 · international 3.15% + €0.25 · +2% on currency conversion.
+[^10]: **Do not add Discord's 10% to its 6%.** The Fees section above Schedule 1 puts the Payment Processing Fee on the gross payment but the Platform Fee on that payment *less* applicable transaction taxes, Payment Processing Fees and Transaction Fees. So the 10% is 9.4% of a sale and Discord's all-in take is **15.4%**, not 16%. The "90/10 split" stays accurate — it is 10% of the remainder.
 
 Skool, Gumroad and Circle host or sell the community themselves rather than gating a Discord server. Tribute gates Telegram. They are here because a seller weighing options weighs them too.
 
@@ -62,9 +63,11 @@ Both examples model **57 and 14 memberships at $35/month**, the modelled average
 | flatpass | $29 (Starter, 57 paid members) + $2,000 × 2.9% ($58.00) + 57 × $0.30 ($17.10) | **$104.10** |
 | Whop | $2,000 × 5.7% ($114.00) + 57 × $0.30 ($17.10) | **$131.10** |
 | LaunchPass | $29 + $2,000 × 6.4% ($128.00) + 57 × $0.30 ($17.10) | **$174.10** |
-| Discord Server Subscriptions | $2,000 × 16% | **$320.00** |
+| Discord Server Subscriptions | $2,000 × 6% ($120.00), then 10% of the $1,880 left ($188.00) | **$308.00** |
 
-Whop's 5.7% is 3% + 2.7%. LaunchPass's 6.4% is 3.5% + Stripe's 2.9%. flatpass's 2.9% is Stripe's alone. Discord's 16% is 10% + 6%, and Discord publishes no per-transaction fixed fee, so none is invented here.
+Whop's 5.7% is 3% + 2.7%. LaunchPass's 6.4% is 3.5% + Stripe's 2.9%. flatpass's 2.9% is Stripe's alone.
+
+**Discord's 15.4% is the one that does not add,** which is why it is written in two steps above. Its 6% processing comes off the whole payment, and its 10% Platform Fee is charged on what remains — so the 10% is 9.4% of the sale, and 0.06 + 0.10 × 0.94 = 0.154, not 0.16. Discord publishes no per-transaction fixed fee, so none is invented here. See [`platforms/discord-server-subscriptions.md`](platforms/discord-server-subscriptions.md).
 
 ### $500/month in sales — 14 transactions
 
@@ -73,7 +76,7 @@ Whop's 5.7% is 3% + 2.7%. LaunchPass's 6.4% is 3.5% + Stripe's 2.9%. flatpass's 
 | flatpass | $0 (Free, 14 paid members) + $500 × 2.9% ($14.50) + 14 × $0.30 ($4.20) | **$18.70** |
 | Whop | $500 × 5.7% ($28.50) + 14 × $0.30 ($4.20) | **$32.70** |
 | LaunchPass | $29 + $500 × 6.4% ($32.00) + 14 × $0.30 ($4.20) | **$65.20** |
-| Discord Server Subscriptions | $500 × 16% | **$80.00** |
+| Discord Server Subscriptions | $500 × 6% ($30.00), then 10% of the $470 left ($47.00) | **$77.00** |
 
 ### $800/month in sales — 23 transactions, and this is where flatpass loses
 
@@ -82,7 +85,7 @@ Whop's 5.7% is 3% + 2.7%. LaunchPass's 6.4% is 3.5% + Stripe's 2.9%. flatpass's 
 | Whop | $800 × 5.7% ($45.60) + 23 × $0.30 ($6.90) | **$52.50** |
 | flatpass | $29 (Starter, 23 paid members) + $800 × 2.9% ($23.20) + 23 × $0.30 ($6.90) | **$59.10** |
 | LaunchPass | $29 + $800 × 6.4% ($51.20) + 23 × $0.30 ($6.90) | **$87.10** |
-| Discord Server Subscriptions | $800 × 16% | **$128.00** |
+| Discord Server Subscriptions | $800 × 6% ($48.00), then 10% of the $752 left ($75.20) | **$123.20** |
 
 Whop is $6.60/month cheaper there. That band runs from the sixteenth paid member — where flatpass's Free tier ends — to about $1,036/month in sales, which is $29 ÷ 2.8%. At the $35 modelled price the flat fee wins above that and does not give it back; below the sixteenth member flatpass is $0 and wins again. At lower membership prices the picture is less tidy — flatpass's caps are break-evens at $35, so at $25 or $20 each cap re-opens a small losing band. [`platforms/flatpass.md`](platforms/flatpass.md) lists them. At $1,000/month the two are within a dollar of each other: Whop $65.70, flatpass $66.70.
 
