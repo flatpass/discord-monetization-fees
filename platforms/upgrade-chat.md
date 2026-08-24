@@ -1,28 +1,34 @@
 # Upgrade.chat
 
-A paid-access layer for Discord, with a percentage per sale that falls on higher plans.
+A paid-access layer for Discord, Telegram and WhatsApp, metered on subscribers, with a percentage per sale that falls on higher plans.
 
 | Field | Value |
 |---|---|
 | Website | https://upgrade.chat |
-| Pricing page | https://upgrade.chat/pricing |
-| Monthly fee | not stated — the plan prices did not render on 2026-08-23 |
-| % of each sale | not stated. The site states "Starting at 2.9%", which is a floor rather than a rate. |
-| Card processing | not stated |
+| Pricing page | https://upgrade.chat (pricing section at /#pricing) |
+| Monthly fee | FREE $0 up to 500 subscribers · PRO $19 up to 1,000 · VIP $49 up to 2,500 · MAX $199 uncapped. These are the discounted prices the page displays; the struck-through list prices are $39, $99 and $399 |
+| % of each sale | FREE 5.9% · PRO 4.9% · VIP 3.9% · MAX 2.9% |
+| Card processing | the seller's own PayPal or Stripe, at the processor's rate (not stated on the page) |
 | Fixed per transaction | not stated |
-| Where the money settles | not stated. The site describes daily payouts via PayPal or Stripe. |
-| Payout fees | not stated |
-| Payout timing / minimum | daily payouts, per the site's own wording; no minimum stated |
-| Other fees | not stated |
-| Verified | not verified |
+| Where the money settles | the seller's own PayPal or Stripe account |
+| Payout fees | none — the page lists "Zero Payout Fees on Payouts" |
+| Payout timing / minimum | the money is deposited as soon as the customer pays, per the FAQ; no minimum stated |
+| Other fees | none stated. A volume rate discount is offered above $50K/month in gross revenue |
+| Verified | 2026-08-23 · primary |
 
 ## Sources
-- https://upgrade.chat/pricing — attempted 2026-08-23 — the page rendered a "Monthly" / "Lifetime" toggle and "Choose a plan right for you, and lock-in our discounted rates!" but no plan names or prices.
-- https://upgrade.chat — retrieved 2026-08-23 — "Upgrade.chat Starting at 2.9%"
-- https://upgrade.chat — retrieved 2026-08-23 — "100% Free to Start for Server Owners"
+- https://upgrade.chat/#pricing — retrieved 2026-08-23 (read in a browser; the section defaults to the Lifetime toggle) — "Rate 5.9%" / "Subscribers 500" / "Free Forever"
+- https://upgrade.chat/#pricing — retrieved 2026-08-23 — plan rows: "PRO $19/mo, Rate 4.9%, Subscribers 1,000"; "VIP $49/mo, Rate 3.9%, Subscribers 2,500"; "MAX $199/mo, Rate 2.9%, Subscribers Unlimited".
+- https://upgrade.chat — retrieved 2026-08-23, FAQ — "money is deposited into your PayPal or Stripe account as soon as the customer pays."
+- https://upgrade.chat — retrieved 2026-08-23 — "Ideal for your Discord server, Telegram channel, or WhatsApp Group"
 - https://upgrade.chat — retrieved 2026-08-23 — "Contact us for a volume rate discount if your gross revenue is over $50K/mo."
 
 ## Notes
-- **Unverified.** "Starting at 2.9%" is the only rate the site states plainly, and a floor is not a fee. The plan ladder — which tiers exist, what each costs per month, and what percentage each carries — could not be read automatically on 2026-08-23.
-- A secondary reading recorded on 2026-08-02 described a ladder running from a free tier at a higher percentage down to 2.9% on a paid plan. It has not been confirmed against Upgrade.chat's own page and is not stated here as a rate.
-- What would close this: a reading of https://upgrade.chat/pricing in a browser with the plan toggle expanded, recording each plan's name, monthly price and percentage.
+- The meter is subscribers, as it is for Subscord and flatpass: 500 on FREE, 1,000 on PRO, 2,500 on VIP, unlimited on MAX.
+- The prices recorded above are the discounted ones the page displays, under the wording "lock-in our discounted rates". Each shows a struck-through list price beside it — $39 for PRO, $99 for VIP, $399 for MAX — and a discount badge: −34%, −41%, −51%.
+- Each paid plan also offers a lifetime price instead of a monthly one: PRO $499 (struck $1,995), VIP $799 (struck $3,995), MAX $1,799 (struck $6,995).
+- The pricing section has a Monthly / Lifetime toggle and **defaults to Lifetime**, which is why a plain text fetch shows the lifetime figures. Both sets were read.
+- Payments go to the seller's own PayPal or Stripe account. The processor's rate is therefore the seller's own and is additional to Upgrade.chat's percentage; the page does not state it.
+- Supported payment methods as listed: "PayPal (200+ Countries/Regions), Stripe (47+ Countries/Regions), Venmo and Cryptocurrency via PayPal/Venmo."
+- Discord servers and Telegram channels are named for every plan. WhatsApp Group Integration appears in the feature list on the higher tiers rather than on all plans.
+- The page was read in a browser. A fetcher rendered the toggle and no plan names or prices, which is what put this platform in "Wanted: help verifying" earlier the same day.

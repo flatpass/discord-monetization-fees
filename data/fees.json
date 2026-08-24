@@ -395,31 +395,71 @@
       "pricing_url": "https://www.sublyna.com/pricing",
       "category": "discord-native",
       "gates": ["discord", "telegram"],
-      "verified_on": null,
-      "verification": "unverified",
+      "verified_on": "2026-08-23",
+      "verification": "primary",
       "monthly_fee_usd": null,
+      "tiers": [
+        {
+          "name": "Starter",
+          "monthly_usd": 0,
+          "cap": 2,
+          "cap_unit": "products",
+          "pct_of_sale": 5
+        },
+        {
+          "name": "Creator",
+          "monthly_usd": 29,
+          "cap": null,
+          "cap_unit": null,
+          "pct_of_sale": 2
+        },
+        {
+          "name": "Business",
+          "monthly_usd": 89,
+          "cap": null,
+          "cap_unit": null,
+          "pct_of_sale": 1
+        }
+      ],
       "pct_of_sale": null,
-      "pct_scope": null,
+      "pct_scope": "transaction fee: 5% on Starter, 2% on Creator, 1% on Business, all on top of Stripe's processing",
       "processing": {
-        "by": null,
+        "by": "seller_stripe",
         "pct": null,
         "fixed_usd": null,
-        "notes": "not stated"
+        "notes": "Stripe's rate on the seller's own account, additional; the page states it as around 2.9% + 30 cents. How the account is connected, Connect or API keys, is not stated."
       },
-      "settles_in": null,
+      "settles_in": "seller_account",
       "payout_fees": [],
       "payout_terms": null,
-      "other_fees": [],
+      "other_fees": [
+        "annual billing displayed as $23/month for Creator and $71/month for Business"
+      ],
       "notes": [
-        "The pricing page could not be fetched automatically on 2026-08-23: it returned only its heading, and the plan table did not render to a fetcher.",
-        "https://sublyna.com/pricing returns HTTP 404; the site serves from the www host.",
-        "No fee figure here meets this repo's sourcing bar, so none is stated."
+        "Every price on the page carries an Early Adopter label, including the free Starter plan, so they may be introductory.",
+        "Prices are displayed in dollars and euros: Creator $29 (27 EUR), Business $89 (82 EUR); annual Creator $23 (21 EUR), Business $71 (65 EUR).",
+        "The marketing headline of just 1% is the Business plan's rate, and Business is $89/month.",
+        "Plan limits as displayed: Starter is 2 products and 1 admin seat with Sublyna branding; Creator is unlimited products and admin seats with Sublyna branding; Business adds customizable branding and priority support. Customers and transactions are unlimited on every plan.",
+        "Every plan lists its platforms as Stripe, Discord, Telegram.",
+        "The plan table renders only in a browser; a plain fetcher gets the heading alone."
       ],
       "sources": [
         {
           "url": "https://www.sublyna.com/pricing",
           "retrieved": "2026-08-23",
-          "quote": "Start free. Upgrade as you grow.",
+          "quote": "you only pay standard Stripe processing fees (around 2.9% + 30¢), which go directly to Stripe, not us.",
+          "type": "primary"
+        },
+        {
+          "url": "https://www.sublyna.com/pricing",
+          "retrieved": "2026-08-23",
+          "quote": "Starter — Free (Early Adopter) — 5% transaction fee; Creator — $29 — 2% transaction fee; Business — $89 — 1% transaction fee",
+          "type": "primary"
+        },
+        {
+          "url": "https://www.sublyna.com/pricing",
+          "retrieved": "2026-08-23",
+          "quote": "Stripe, Discord, Telegram",
           "type": "primary"
         }
       ]
@@ -474,39 +514,94 @@
       "id": "upgrade-chat",
       "name": "Upgrade.chat",
       "website": "https://upgrade.chat",
-      "pricing_url": "https://upgrade.chat/pricing",
+      "pricing_url": "https://upgrade.chat/#pricing",
       "category": "discord-native",
-      "gates": ["discord"],
-      "verified_on": null,
-      "verification": "unverified",
+      "gates": ["discord", "telegram", "whatsapp"],
+      "verified_on": "2026-08-23",
+      "verification": "primary",
       "monthly_fee_usd": null,
+      "tiers": [
+        {
+          "name": "FREE",
+          "monthly_usd": 0,
+          "cap": 500,
+          "cap_unit": "subscribers",
+          "pct_of_sale": 5.9
+        },
+        {
+          "name": "PRO",
+          "monthly_usd": 19,
+          "cap": 1000,
+          "cap_unit": "subscribers",
+          "pct_of_sale": 4.9
+        },
+        {
+          "name": "VIP",
+          "monthly_usd": 49,
+          "cap": 2500,
+          "cap_unit": "subscribers",
+          "pct_of_sale": 3.9
+        },
+        {
+          "name": "MAX",
+          "monthly_usd": 199,
+          "cap": null,
+          "cap_unit": "subscribers",
+          "pct_of_sale": 2.9
+        }
+      ],
       "pct_of_sale": null,
-      "pct_scope": "not stated; the site states \"Starting at 2.9%\", which is a floor rather than a rate",
+      "pct_scope": "rate per plan: 5.9% on FREE, 4.9% on PRO, 3.9% on VIP, 2.9% on MAX",
       "processing": {
-        "by": null,
+        "by": "seller_paypal_or_stripe",
         "pct": null,
         "fixed_usd": null,
-        "notes": "not stated"
+        "notes": "the seller's own PayPal or Stripe, at the processor's rate; the rate is not stated on the page"
       },
-      "settles_in": null,
+      "settles_in": "seller_account",
       "payout_fees": [],
-      "payout_terms": "the site describes daily payouts via PayPal or Stripe; no minimum stated",
-      "other_fees": [],
+      "payout_terms": "the money is deposited into the seller's PayPal or Stripe account as soon as the customer pays; no minimum stated. The page lists Zero Payout Fees on Payouts.",
+      "other_fees": [
+        "lifetime prices offered instead of monthly: PRO $499, VIP $799, MAX $1,799"
+      ],
       "notes": [
-        "The pricing page rendered a Monthly / Lifetime toggle but no plan names or prices to an automated fetcher on 2026-08-23.",
+        "The meter is subscribers: 500 on FREE, 1,000 on PRO, 2,500 on VIP, unlimited on MAX.",
+        "The monthly prices recorded here are the discounted ones the page displays. The struck-through list prices are $39 for PRO, $99 for VIP and $399 for MAX, with badges of -34%, -41% and -51%.",
+        "The lifetime prices are also shown discounted, from $1,995, $3,995 and $6,995.",
+        "The pricing section has a Monthly / Lifetime toggle and defaults to Lifetime, which is why a plain text fetch shows the lifetime figures.",
+        "Supported payment methods as listed: PayPal (200+ countries/regions), Stripe (47+ countries/regions), Venmo and cryptocurrency via PayPal/Venmo.",
+        "Discord servers and Telegram channels are named for every plan; WhatsApp Group Integration appears in the feature list on the higher tiers.",
         "A volume rate discount is offered above $50K/month in gross revenue."
       ],
       "sources": [
         {
-          "url": "https://upgrade.chat",
+          "url": "https://upgrade.chat/#pricing",
           "retrieved": "2026-08-23",
-          "quote": "Upgrade.chat Starting at 2.9%",
+          "quote": "Rate 5.9% / Subscribers 500 / Free Forever",
+          "type": "primary"
+        },
+        {
+          "url": "https://upgrade.chat/#pricing",
+          "retrieved": "2026-08-23",
+          "quote": "PRO $19/mo Rate 4.9% Subscribers 1,000; VIP $49/mo Rate 3.9% Subscribers 2,500; MAX $199/mo Rate 2.9% Subscribers Unlimited",
           "type": "primary"
         },
         {
           "url": "https://upgrade.chat",
           "retrieved": "2026-08-23",
-          "quote": "100% Free to Start for Server Owners",
+          "quote": "money is deposited into your PayPal or Stripe account as soon as the customer pays.",
+          "type": "primary"
+        },
+        {
+          "url": "https://upgrade.chat",
+          "retrieved": "2026-08-23",
+          "quote": "Ideal for your Discord server, Telegram channel, or WhatsApp Group",
+          "type": "primary"
+        },
+        {
+          "url": "https://upgrade.chat",
+          "retrieved": "2026-08-23",
+          "quote": "Contact us for a volume rate discount if your gross revenue is over $50K/mo.",
           "type": "primary"
         }
       ]

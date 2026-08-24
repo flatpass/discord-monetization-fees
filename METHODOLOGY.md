@@ -13,7 +13,7 @@ The reason this is a rule and not a preference is Discord. Its own processing is
 **Whose processing rate.** Two shapes, and they behave differently:
 
 - **Platforms that process their own cards** — Whop, Discord Server Subscriptions, and by their own published wording Skool, Gumroad, Patreon and Tribute — carry their rate wherever the seller is.
-- **Platforms that run on the seller's own account** — LaunchPass, flatpass, Subscord, PayBot, DoorFee, XOE, Memberful, Ko-fi — carry the seller's country's Stripe or PayPal pricing, and within that, the tier follows the member's card (EEA, UK, international, plus conversion).
+- **Platforms that run on the seller's own account** — LaunchPass, flatpass, Subscord, PayBot, DoorFee, Sublyna, XOE, Upgrade.chat, Memberful, Ko-fi — carry the seller's country's Stripe or PayPal pricing, and within that, the tier follows the member's card (EEA, UK, international, plus conversion).
 
 A consequence worth stating out loud: a platform being based in the EU does not give its sellers EEA rates, and a platform being based in the US does not impose US rates on a European seller. The rate follows the account that takes the charge.
 
@@ -81,7 +81,7 @@ Whop's 3% is the tier's only occupant because it is genuinely unpublished. A rea
 
 **A 403 is not a finding.** This is worth stating as a rule because accepting one as a dead end has already produced a wrong correction in this dataset's history: a US-only claim about Discord Server Subscriptions was "corrected" away by reasoning from a document that did not answer the question, while the document that answered it directly sat behind a 403 whose workaround was already known. The correction was reverted the same day. See [CHANGELOG.md](CHANGELOG.md).
 
-The same rule applies to a page that returns 200 but renders its prices in JavaScript a fetcher does not run. That is not "the platform does not publish a price" — it is "this could not be fetched automatically", and the platform goes to `unverified` until someone reads it in a browser.
+The same rule applies to a page that returns 200 but renders its prices in JavaScript a fetcher does not run. That is not "the platform does not publish a price" — it is "this could not be fetched automatically", and the platform goes to `unverified` until someone reads it in a browser. `www.sublyna.com/pricing` and the pricing section of `upgrade.chat` are both of that kind — their plan tables render only in a browser, and Upgrade.chat's section defaults to its Lifetime toggle, so the monthly prices appear only once it is switched.
 
 ## 7. Scope and fairness rules
 
