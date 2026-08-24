@@ -177,7 +177,7 @@
         }
       ],
       "pct_of_sale": 0,
-      "pct_scope": "no percentage at any rung",
+      "pct_scope": "at every rung",
       "processing": {
         "by": "seller_stripe",
         "pct": null,
