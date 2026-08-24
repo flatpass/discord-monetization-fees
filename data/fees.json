@@ -664,30 +664,82 @@
       "pricing_url": "https://www.patreon.com/pricing",
       "category": "creator",
       "gates": ["discord"],
-      "verified_on": "2026-08-03",
+      "verified_on": "2026-08-23",
       "verification": "primary",
       "monthly_fee_usd": 0,
       "pct_of_sale": 10.0,
       "pct_scope": "creator income, on the single published plan",
       "processing": {
         "by": "platform",
-        "pct": null,
-        "fixed_usd": null,
-        "notes": "Patreon's own, additional to the 10%; the rate was not captured at retrieval and is not guessed here"
+        "pct": 2.9,
+        "fixed_usd": 0.3,
+        "notes": "Patreon's own, additional to the 10%. Credit card / Apple Pay 2.9% + $0.30; PayPal / Venmo US 2.9% + $0.30, non-US 3.9% + $0.30. Legacy plans carry micropayment rates of 5% + $0.10 (card / Apple Pay and PayPal US) and 6% + $0.10 (PayPal non-US) on payments of $3 or less, with the standard rates above $3; Founders legacy processing is 1.6% + $0.30 on cards and 2.65% + $0.28 on PayPal. Non-USD rates are listed per currency and are not recorded here."
       },
       "settles_in": "platform_balance",
-      "payout_fees": [],
+      "payout_fees": [
+        { "method": "Direct Deposit (ACH/Stripe)", "fixed_usd": 0.25, "pct": 0 },
+        {
+          "method": "PayPal (minimum $0.25, capped at $20)",
+          "fixed_usd": 0,
+          "pct": 1
+        },
+        { "method": "Payoneer", "fixed_usd": 1, "pct": 0 }
+      ],
       "payout_terms": null,
-      "other_fees": ["currency conversion", "payout fees"],
+      "other_fees": [
+        "currency conversion 2.5% on any payment made in a currency different from the payout currency",
+        "iOS in-app purchases: Apple's 30% App Store fee replaces Patreon's processing fee; the platform fee still applies",
+        "applicable taxes"
+      ],
       "notes": [
         "One plan, not tiers. The 8% / 12% plan structure is retired.",
-        "The 10% is a platform fee; processing, conversion and payout fees are charged separately."
+        "The 10% is a platform fee; processing, conversion and payout fees are charged separately.",
+        "The 10% was first read on 2026-08-03; the processing and payout figures were read on 2026-08-23.",
+        "The standard 10% applies to any creator who published their page after 2025-08-04. Legacy plans run at 5% (Founders), 8% (Pro) and 11% (Pro + Merch).",
+        "U.S. customers may have the option to complete purchases through Patreon's mobile web checkout instead of Apple's in-app purchase flow.",
+        "support.patreon.com returns 403 to a fetcher and was blocked for the maintainer's browser; the creator fees article was read through a render proxy."
       ],
       "sources": [
         {
           "url": "https://www.patreon.com/pricing",
-          "retrieved": "2026-08-03",
-          "quote": "No verbatim quote was recorded at retrieval.",
+          "retrieved": "2026-08-23",
+          "quote": "10% of the income you earn on Patreon",
+          "type": "primary"
+        },
+        {
+          "url": "https://www.patreon.com/pricing",
+          "retrieved": "2026-08-23",
+          "quote": "Plus payment processing, currency conversion, and payout fees, and applicable taxes.",
+          "type": "primary"
+        },
+        {
+          "url": "https://support.patreon.com/hc/en-us/articles/11111747095181-Creator-fees-overview",
+          "retrieved": "2026-08-23",
+          "quote": "Credit card / Apple Pay: Any - 2.9% + $0.30; PayPal / Venmo: US - 2.9% + $0.30; PayPal / Venmo: Non-US - 3.9% + $0.30",
+          "type": "primary"
+        },
+        {
+          "url": "https://support.patreon.com/hc/en-us/articles/11111747095181-Creator-fees-overview",
+          "retrieved": "2026-08-23",
+          "quote": "Direct Deposit (ACH/Stripe): $0.25 USD per payout; PayPal: 1% (minimum of $0.25, capped at $20 USD); Payoneer: $1.00 USD per payout",
+          "type": "primary"
+        },
+        {
+          "url": "https://support.patreon.com/hc/en-us/articles/11111747095181-Creator-fees-overview",
+          "retrieved": "2026-08-23",
+          "quote": "A 2.5% currency conversion fee applies to any payment made in a currency different from your payout currency",
+          "type": "primary"
+        },
+        {
+          "url": "https://support.patreon.com/hc/en-us/articles/11111747095181-Creator-fees-overview",
+          "retrieved": "2026-08-23",
+          "quote": "The standard 10% pricing plan + relevant taxes applies to any creator who publishes their Patreon page after August 4, 2025",
+          "type": "primary"
+        },
+        {
+          "url": "https://support.patreon.com/hc/en-us/articles/11111747095181-Creator-fees-overview",
+          "retrieved": "2026-08-23",
+          "quote": "Patreon does not charge additional payment processing fees on iOS transactions, but the platform fee still applies",
           "type": "primary"
         }
       ]

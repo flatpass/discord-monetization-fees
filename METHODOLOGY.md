@@ -77,7 +77,7 @@ Whop's 3% is the tier's only occupant because it is genuinely unpublished. A rea
 
 ## 6. Pages that block automated fetching
 
-`support.discord.com`, `creator-support.discord.com` and `ko-fi.com/pricing` return 403 to a fetcher. They render fine in a browser, and that is how the figures here were read.
+`support.discord.com`, `creator-support.discord.com` and `ko-fi.com/pricing` return 403 to a fetcher. They render fine in a browser, and that is how the figures here were read. `support.patreon.com` does the same and was also blocked for the maintainer's browser, so Patreon's creator fees article was read through a render proxy.
 
 **A 403 is not a finding.** This is worth stating as a rule because accepting one as a dead end has already produced a wrong correction in this dataset's history: a US-only claim about Discord Server Subscriptions was "corrected" away by reasoning from a document that did not answer the question, while the document that answered it directly sat behind a 403 whose workaround was already known. The correction was reverted the same day. See [CHANGELOG.md](CHANGELOG.md).
 

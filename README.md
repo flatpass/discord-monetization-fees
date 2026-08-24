@@ -22,7 +22,7 @@ Every row below is either `primary` (read on the platform's own page or terms) o
 | [XOE](platforms/xoe.md) | $0 | 0% cards · 5% crypto | seller's own Stripe | seller's Stripe; crypto to wallet | none stated | 2026-08-23 | primary |
 | [Upgrade.chat](platforms/upgrade-chat.md) | $0 / $19 / $49 / $199 [^6] | 5.9% · 4.9% · 3.9% · 2.9% | seller's own PayPal or Stripe | seller's PayPal or Stripe | none | 2026-08-23 | primary |
 | [Discord Server Subscriptions](platforms/discord-server-subscriptions.md) | $0 | 10% platform fee | own, 6% desktop/browser | Discord | not stated | 2026-08-03 | primary |
-| [Patreon](platforms/patreon.md) | $0 | 10% | own, rate not stated here | Patreon | payout and conversion fees apply | 2026-08-03 | primary |
+| [Patreon](platforms/patreon.md) | $0 | 10% | own, 2.9% + $0.30 | Patreon | direct deposit $0.25 · PayPal 1% (min $0.25, cap $20) · Payoneer $1 | 2026-08-23 | primary |
 | [Ko-fi](platforms/ko-fi.md) | $0, or paid Gold [^7] | 0% tips · 5% memberships and shop | seller's own PayPal or Stripe | seller's account | none | 2026-08-03 | primary |
 | [Skool](platforms/skool.md) | $9 Hobby · $99 Pro | 10% Hobby · 2.9% Pro | no separate line published | not stated | not stated | 2026-08-23 | primary |
 | [Gumroad](platforms/gumroad.md) | $0 | 10% + $0.50 · 30% via Discover | no separate line published | Gumroad | not stated | 2026-08-23 | primary |
@@ -92,7 +92,7 @@ Redo any of these with the numbers in [`data/fees.json`](data/fees.json).
 
 No platform is currently listed here: every row in [`data/fees.json`](data/fees.json) now has a primary reading behind it. A platform whose own pages cannot be read goes here, with `"verification": "unverified"` and no fee figures, until someone reads them.
 
-Also wanted, on rows that are otherwise verified: Patreon's own card processing rate; Ko-fi Gold's current monthly price; Skool's and Circle's payout terms; whether Circle publishes a processing rate anywhere.
+Also wanted, on rows that are otherwise verified: Ko-fi Gold's current monthly price; Skool's and Circle's payout terms; whether Circle publishes a processing rate anywhere.
 
 ## Contributing
 
