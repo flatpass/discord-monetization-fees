@@ -25,6 +25,7 @@ Corrections carried over from the maintainer's internal fee record, which this r
 | 2026-08-23 | Subscord | Free ≤10, Pro $39 ≤50, Max $65 ≤500, Unlimited $199 | **Confirmed unchanged** from the 2026-08-05 reading | subscord.com | maintainer, reading the primary source |
 | 2026-08-23 | PayBot | 3% per sale, no monthly fee, seller's own Stripe | **Confirmed** on PayBot's own pages | paybotapp.com | maintainer, reading the primary source |
 | 2026-08-23 | Upgrade.chat | A ladder from a free tier at a higher percentage down to 2.9% on a paid plan | **Moved to unverified.** The pricing page did not render plan names or prices to a fetcher; the only rate the site states plainly is "Starting at 2.9%", which is a floor, not a rate | upgrade.chat and upgrade.chat/pricing | maintainer |
+| 2026-08-23 | flatpass, vs Whop | Past $1,036/month the flat fee wins "permanently"; crossing a cap never re-opens the gap | **True at a $35 membership price only.** The caps are break-evens at $35, so at $25 Whop is also cheaper at 81–112 and 201–212 paid members, at $20 at 81–141 and 201–266 — see `platforms/flatpass.md` | arithmetic, computing the break-evens at other prices | maintainer |
 | 2026-08-23 | Sublyna | A free tier plus two paid tiers with falling percentages | **Moved to unverified.** The pricing page could not be fetched automatically; no figure meets this repo's sourcing bar, so none is stated | www.sublyna.com/pricing | maintainer |
 
 Corrections are credited here by name or handle if the reporter wants — open an issue.

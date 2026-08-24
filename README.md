@@ -80,7 +80,7 @@ Whop's 5.7% is 3% + 2.7%. LaunchPass's 6.4% is 3.5% + Stripe's 2.9%. flatpass's 
 | LaunchPass | $29 + $800 × 6.4% ($51.20) + 23 × $0.30 ($6.90) | **$87.10** |
 | Discord Server Subscriptions | $800 × 16% | **$128.00** |
 
-Whop is $6.60/month cheaper there. That band runs from the sixteenth paid member — where flatpass's Free tier ends — to about $1,036/month in sales, which is $29 ÷ 2.8%. Above it the flat fee wins and does not give it back; below the sixteenth member flatpass is $0 and wins again. At $1,000/month the two are within a dollar of each other: Whop $65.70, flatpass $66.70.
+Whop is $6.60/month cheaper there. That band runs from the sixteenth paid member — where flatpass's Free tier ends — to about $1,036/month in sales, which is $29 ÷ 2.8%. At the $35 modelled price the flat fee wins above that and does not give it back; below the sixteenth member flatpass is $0 and wins again. At lower membership prices the picture is less tidy — flatpass's caps are break-evens at $35, so at $25 or $20 each cap re-opens a small losing band. [`platforms/flatpass.md`](platforms/flatpass.md) lists them. At $1,000/month the two are within a dollar of each other: Whop $65.70, flatpass $66.70.
 
 Redo any of these with the numbers in [`data/fees.json`](data/fees.json).
 
@@ -97,7 +97,7 @@ Also wanted, on rows that are otherwise verified: Patreon's own card processing 
 
 ## Contributing
 
-Wrong numbers are the point of this repo — report one and it gets fixed and credited. See [CONTRIBUTING.md](CONTRIBUTING.md) for what counts as a source and how to add a platform.
+Finding wrong numbers is the point of this repo — report one and it gets fixed and credited. See [CONTRIBUTING.md](CONTRIBUTING.md) for what counts as a source and how to add a platform.
 
 ## License
 

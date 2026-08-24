@@ -30,8 +30,10 @@ The meter is **active paid members**, not sales volume and not Discord headcount
 
 ## Where flatpass is the more expensive option
 
-Two cases, both from the numbers in this repo.
+Three cases, all from the numbers in this repo.
 
 **Whop is cheaper all-in below about $1,036/month in sales.** Whop's all-in is 5.7% + $0.30; flatpass's Starter rung is $29 plus the seller's own Stripe 2.9% + $0.30. The fixed fee cancels, so the crossover is $29 ÷ (5.7% − 2.9%) = $29 ÷ 2.8% ≈ $1,036/month. Between the sixteenth paid member and that volume — roughly 16 to 29 paid members at a modelled $35 average membership price — Whop costs the seller less. Below 16 paid members flatpass's Free tier is $0 and the comparison goes the other way.
 
 **Subscord is cheaper at 81–500 active subscriptions, and above 750.** Subscord meters the same thing flatpass does, so the ladders compare directly: Subscord's $65 for up to 500 active subscribers beats flatpass's $79 (up to 200) and $149 (up to 750), and Subscord's $199 uncapped beats flatpass's $399. flatpass is cheaper below 81 and in the 501–750 band.
+
+**At membership prices below about $35, each cap re-opens a losing band against Whop.** flatpass's caps (80, 200, 750) are set where the next rung's fee equals Whop's 2.8-point spread *at a $35 membership price*: $79 ÷ (2.8% × $35) ≈ 81 members. At a lower price the same rung needs more members to pay for itself, so a seller crossing a cap is briefly worse off than on Whop. Computed 2026-08-23 from the same formulas: at $25 a month, Whop is cheaper at 16–41, 81–112 and 201–212 paid members; at $20, at 16–51, 81–141 and 201–266; at $10, at 16–532 and 751–1,424. At $35 and above the only losing band is 16–29. flatpass's own pricing page states the crossover as "permanently" — that is true at $35 and not below it, and is recorded here rather than smoothed over.
