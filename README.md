@@ -4,7 +4,7 @@ A sourced, dated record of what each platform charges to sell paid access to a D
 
 This dataset is maintained by **flatpass** ([flatpass.io](https://flatpass.io)), which sells one of the products in the table below. That is a conflict of interest, so here is how it is handled: every number carries a source URL, a retrieval date and a verification tier; the table includes the rows where flatpass is the more expensive option, and [`platforms/flatpass.md`](platforms/flatpass.md) has a section that names them; corrections are logged in [CHANGELOG.md](CHANGELOG.md) with credit to whoever found them; and anyone can open an issue disputing any figure here. If a number is wrong, the fix is a pull request, not an argument.
 
-Last updated **2026-08-24**.
+Last updated **2026-08-26**.
 
 ## The table
 
@@ -19,6 +19,7 @@ Every row below is either `primary` (read on the platform's own page or terms) o
 | [PayBot](platforms/paybot.md) | $0 | 3% | seller's own Stripe | seller's Stripe | none | 2026-08-23 | primary |
 | [DoorFee](platforms/doorfee.md) | $0 Free · $28 Pro | 10% Free · 2.5% Pro | seller's own Stripe | seller's Stripe | none | 2026-08-23 | primary |
 | [Sublyna](platforms/sublyna.md) | $0 Starter · $29 Creator · $89 Business [^5] | 5% · 2% · 1% | seller's own Stripe, around 2.9% + $0.30 | seller's Stripe | none | 2026-08-23 | primary |
+| [Sublaunch](platforms/sublaunch.md) | $0 Free · $99 Business · $169 Premium [^11] | 15% · 4% · 3% | seller's own Stripe | seller's Stripe | none | 2026-08-26 | primary |
 | [XOE](platforms/xoe.md) | $0 | 0% cards · 5% crypto | seller's own Stripe | seller's Stripe; crypto to wallet | none stated | 2026-08-23 | primary |
 | [Upgrade.chat](platforms/upgrade-chat.md) | $0 / $19 / $49 / $199 [^6] | 5.9% · 4.9% · 3.9% · 2.9% | seller's own PayPal or Stripe | seller's PayPal or Stripe | none | 2026-08-23 | primary |
 | [Discord Server Subscriptions](platforms/discord-server-subscriptions.md) | $0 | 10% platform fee [^10] | own, 6% desktop/browser | Discord | not stated | 2026-08-24 | primary |
@@ -40,6 +41,7 @@ Every row below is either `primary` (read on the platform's own page or terms) o
 [^7]: Gold waives the 5%. Its monthly price is quoted as both $6 and $12 across 2026 guides, so this dataset does not state it.
 [^8]: Tribute pays out on the 25th and the 10th, with a €100 minimum for bank card payouts.
 [^9]: Standard EEA 1.5% + €0.25 · UK 2.5% + €0.25 · international 3.15% + €0.25 · +2% on currency conversion.
+[^11]: Sublaunch's commission falls as the monthly price rises: Free with 15%, Business $99 with 4%, Premium $169 with 3%, Stripe additional on the seller's own account. The 15% is the highest free-tier rate in this table. A subscription keeps the commission rate it was created under — upgrading reprices only future subscribers. A different product from Sublyna, despite the name.
 [^10]: **Do not add Discord's 10% to its 6%.** The Fees section above Schedule 1 puts the Payment Processing Fee on the gross payment but the Platform Fee on that payment *less* applicable transaction taxes, Payment Processing Fees and Transaction Fees. So the 10% is 9.4% of a sale and Discord's all-in take is **15.4%**, not 16%. The "90/10 split" stays accurate — it is 10% of the remainder.
 
 Skool, Gumroad and Circle host or sell the community themselves rather than gating a Discord server. Tribute gates Telegram. They are here because a seller weighing options weighs them too.
@@ -48,7 +50,7 @@ Skool, Gumroad and Circle host or sell the community themselves rather than gati
 
 **All-in versus platform-fee-only.** A platform fee is not the whole bill — card processing sits beside it, and the two are not comparable across platforms because Discord's own processing is 6%, roughly double what everyone else charges. So every cost computed in this repo is **all-in**: the platform's fee plus card processing at that platform's own rate. Where a figure is platform-fee-only it says so and names what it leaves out. [METHODOLOGY.md](METHODOLOGY.md) § Conventions has the full rule.
 
-**Whose processing rate.** Whop and Discord process their own cards, so their rate follows *them* wherever the seller is. LaunchPass, flatpass, Subscord, PayBot, DoorFee, Sublyna, XOE, Upgrade.chat, Memberful and Ko-fi run on the seller's own Stripe or PayPal account, so the rate follows the *seller's* country and the member's card. A platform being based in the EU does not give its sellers EEA rates.
+**Whose processing rate.** Whop and Discord process their own cards, so their rate follows *them* wherever the seller is. LaunchPass, flatpass, Subscord, PayBot, DoorFee, Sublyna, Sublaunch, XOE, Upgrade.chat, Memberful and Ko-fi run on the seller's own Stripe or PayPal account, so the rate follows the *seller's* country and the member's card. A platform being based in the EU does not give its sellers EEA rates.
 
 **Flat fee versus percentage.** The crossover is `flat fee ÷ (competitor's all-in % − the seller's own processing %)`. Dividing by the competitor's full percentage instead is a common error that halves every break-even — see [METHODOLOGY.md](METHODOLOGY.md) § Comparing a flat fee to a percentage.
 

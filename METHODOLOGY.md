@@ -15,7 +15,7 @@ The reason this is a rule and not a preference is Discord. Its own processing is
 **Whose processing rate.** Two shapes, and they behave differently:
 
 - **Platforms that process their own cards** — Whop, Discord Server Subscriptions, and by their own published wording Skool, Gumroad, Patreon and Tribute — carry their rate wherever the seller is.
-- **Platforms that run on the seller's own account** — LaunchPass, flatpass, Subscord, PayBot, DoorFee, Sublyna, XOE, Upgrade.chat, Memberful, Ko-fi — carry the seller's country's Stripe or PayPal pricing, and within that, the tier follows the member's card (EEA, UK, international, plus conversion).
+- **Platforms that run on the seller's own account** — LaunchPass, flatpass, Subscord, PayBot, DoorFee, Sublyna, Sublaunch, XOE, Upgrade.chat, Memberful, Ko-fi — carry the seller's country's Stripe or PayPal pricing, and within that, the tier follows the member's card (EEA, UK, international, plus conversion).
 
 A consequence worth stating out loud: a platform being based in the EU does not give its sellers EEA rates, and a platform being based in the US does not impose US rates on a European seller. The rate follows the account that takes the charge.
 

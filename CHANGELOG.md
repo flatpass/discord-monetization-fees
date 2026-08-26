@@ -39,4 +39,8 @@ The 2026-08-03 correction above found the 6% that every secondary guide drops, w
 
 `data/fees.json` now carries `"pct_base": "net_of_processing"` on Discord's row — the only row with the field — so the dataset can go on recording the rate the terms state (10%) while anything computing from it applies that 10% to the right base. A row without the field is a percentage of the gross sale.
 
+## 2026-08-26 — Sublaunch added
+
+Not a correction — a new row. Sublaunch (sublaunch.com, a different product from Sublyna despite the name) was read in a browser on 2026-08-26: Free plan with a 15% commission, Business $99/month with 4%, Premium $169/month with 3%, Stripe's processing additional on the seller's own account, where the money settles directly — "Sublaunch does not hold or manage funds for creators", per its terms. Two things worth flagging beyond the rates: the 15% free tier is the highest free-tier rate in the dataset, and a subscription keeps the commission rate it was created under, so upgrading a plan reprices only future subscribers. See [`platforms/sublaunch.md`](platforms/sublaunch.md).
+
 Corrections are credited here by name or handle if the reporter wants — open an issue.

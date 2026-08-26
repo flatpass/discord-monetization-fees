@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-08-24",
+  "updated": "2026-08-26",
   "license": "CC-BY-4.0",
   "maintainer": { "name": "flatpass", "url": "https://flatpass.io" },
   "conventions": {
@@ -460,6 +460,92 @@
           "url": "https://www.sublyna.com/pricing",
           "retrieved": "2026-08-23",
           "quote": "Stripe, Discord, Telegram",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "id": "sublaunch",
+      "name": "Sublaunch",
+      "website": "https://sublaunch.com",
+      "pricing_url": "https://sublaunch.com/#pricing_id",
+      "category": "discord-native",
+      "gates": ["discord", "telegram", "whatsapp"],
+      "verified_on": "2026-08-26",
+      "verification": "primary",
+      "monthly_fee_usd": null,
+      "tiers": [
+        {
+          "name": "Free",
+          "monthly_usd": 0,
+          "cap": null,
+          "cap_unit": null,
+          "pct_of_sale": 15
+        },
+        {
+          "name": "Business",
+          "monthly_usd": 99,
+          "cap": null,
+          "cap_unit": null,
+          "pct_of_sale": 4
+        },
+        {
+          "name": "Premium",
+          "monthly_usd": 169,
+          "cap": null,
+          "cap_unit": null,
+          "pct_of_sale": 3
+        }
+      ],
+      "pct_of_sale": null,
+      "pct_scope": "transaction fee: 15% on Free, 4% on Business, 3% on Premium, all on top of Stripe's processing",
+      "processing": {
+        "by": "seller_stripe",
+        "pct": null,
+        "fixed_usd": null,
+        "notes": "Stripe's rate on the seller's own account, additional; the FAQ states that Stripe's processing fees apply in addition to Sublaunch's commissions. How the account is connected, Connect or API keys, is not stated."
+      },
+      "settles_in": "seller_account",
+      "payout_fees": [],
+      "payout_terms": null,
+      "other_fees": [],
+      "notes": [
+        "The 15% free-tier commission is the highest free-tier rate in this dataset; the paid plans buy it down to 4% and 3%.",
+        "The commission on an existing subscription is fixed at creation: upgrading a plan applies the new rate only to subscriptions created after the upgrade, per the FAQ.",
+        "Fees are deducted automatically via Stripe from each transaction, and Sublaunch does not hold or manage funds for creators, per the terms.",
+        "Gates Telegram channels, Discord servers and WhatsApp groups, and hosts online courses natively.",
+        "Stripe is the only stated payment path; the FAQ describes PayPal and crypto as being monitored for future support.",
+        "A different product from Sublyna (sublyna.com), whose blog markets it as a Sublaunch alternative."
+      ],
+      "sources": [
+        {
+          "url": "https://sublaunch.com/#pricing_id",
+          "retrieved": "2026-08-26",
+          "quote": "Free — To start for free in 5 minutes. Free forever.; Business — $99 per month; Premium — $169 per month; Transaction fee — 15% — 4% — 3%",
+          "type": "primary"
+        },
+        {
+          "url": "https://sublaunch.com",
+          "retrieved": "2026-08-26",
+          "quote": "Sublaunch offers a free plan with a 15% commission fee. Paid plans are available, reducing the commission to as low as 3%, based on your volume. Please note that Stripe's processing fees apply in addition to Sublaunch's commissions.",
+          "type": "primary"
+        },
+        {
+          "url": "https://sublaunch.com",
+          "retrieved": "2026-08-26",
+          "quote": "No, the commission fee for any existing subscriptions will remain the same even if you upgrade your plan. The new commission percentage fee will only apply to future subscriptions created after your plan upgrade.",
+          "type": "primary"
+        },
+        {
+          "url": "https://sublaunch.com/terms",
+          "retrieved": "2026-08-26",
+          "quote": "Sublaunch may collect transaction fees based on the plan chosen by the creator. These fees are deducted automatically via Stripe from each transaction.",
+          "type": "primary"
+        },
+        {
+          "url": "https://sublaunch.com/terms",
+          "retrieved": "2026-08-26",
+          "quote": "Sublaunch does not hold or manage funds for creators; all funds are processed and delivered directly to creators' Stripe accounts.",
           "type": "primary"
         }
       ]
