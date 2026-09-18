@@ -43,4 +43,8 @@ The 2026-08-03 correction above found the 6% that every secondary guide drops, w
 
 Not a correction — a new row. Sublaunch (sublaunch.com, a different product from Sublyna despite the name) was read in a browser on 2026-08-26: Free plan with a 15% commission, Business $99/month with 4%, Premium $169/month with 3%, Stripe's processing additional on the seller's own account, where the money settles directly — "Sublaunch does not hold or manage funds for creators", per its terms. Two things worth flagging beyond the rates: the 15% free tier is the highest free-tier rate in the dataset, and a subscription keeps the commission rate it was created under, so upgrading a plan reprices only future subscribers. See [`platforms/sublaunch.md`](platforms/sublaunch.md).
 
+## 2026-09-18 — the table pairs fees and rates by name, not by position
+
+Not a number change, but a correction to how the table reads. Rows with several plans listed their monthly fees in one column and their rates in the next, joined by three different separators (`/`, `·`, `,`), and some rows named no plans at all. Upgrade.chat's row read `$0 / $19 / $49 / $199` beside `5.9% · 4.9% · 3.9% · 2.9%`, so which rate belonged to which plan was left to position and to footnote 6. Every multi-plan row now names the plan on both sides, for example `$19 PRO` beside `4.9% PRO`, joined by ` · ` throughout, and the table intro says so. The figures and `data/fees.json` are unchanged. Circle's first plan is now called Professional, its own name, rather than Pro.
+
 Corrections are credited here by name or handle if the reporter wants — open an issue.

@@ -8,27 +8,27 @@ Last updated **2026-08-26**.
 
 ## The table
 
-Every row below is either `primary` (read on the platform's own page or terms) or `direct-confirmation` (see METHODOLOGY). Platforms whose own pages could not be read are in [Wanted: help verifying](#wanted-help-verifying) instead, with no numbers attached.
+Every row below is either `primary` (read on the platform's own page or terms) or `direct-confirmation` (see METHODOLOGY). Where a platform has more than one plan, every fee and every rate carries its plan's name, so the two columns pair by name and never by position. Platforms whose own pages could not be read are in [Wanted: help verifying](#wanted-help-verifying) instead, with no numbers attached.
 
 | Platform | Monthly fee | % of each sale | Card processing | Where the money settles | Payout fees | Verified | Tier |
 |---|---|---|---|---|---|---|---|
 | [Whop](platforms/whop.md) | $0 | 3% [^1] | own, 2.7% + $0.30 | Whop balance | ACH $2.50 · instant 4% + $1 · wire ~$23 | 2026-08-03 | direct-confirmation |
-| [LaunchPass](platforms/launchpass.md) | $29 Premium, per community [^2] | 3.5% | seller's own Stripe | seller's Stripe | none | 2026-08-02 | primary |
-| [flatpass](platforms/flatpass.md) | $0 / $29 / $79 / $149 / $399 [^3] | 0% | seller's own Stripe | seller's Stripe | none | 2026-08-23 | primary |
-| [Subscord](platforms/subscord.md) | $0 / $39 / $65 / $199 [^4] | 0% (crypto 0.5% + gas) | seller's own Stripe, 2.9% + $0.30 | seller's Stripe | none | 2026-08-23 | primary |
+| [LaunchPass](platforms/launchpass.md) | $29 Premium per community [^2] | 3.5% Premium | seller's own Stripe | seller's Stripe | none | 2026-08-02 | primary |
+| [flatpass](platforms/flatpass.md) | $0 Free · $29 Starter · $79 Growth · $149 Scale · $399 Max [^3] | 0% on every plan | seller's own Stripe | seller's Stripe | none | 2026-08-23 | primary |
+| [Subscord](platforms/subscord.md) | $0 Free · $39 Pro · $65 Max · $199 Unlimited [^4] | 0% on every plan (crypto 0.5% + gas) | seller's own Stripe, 2.9% + $0.30 | seller's Stripe | none | 2026-08-23 | primary |
 | [PayBot](platforms/paybot.md) | $0 | 3% | seller's own Stripe | seller's Stripe | none | 2026-08-23 | primary |
 | [DoorFee](platforms/doorfee.md) | $0 Free · $28 Pro | 10% Free · 2.5% Pro | seller's own Stripe | seller's Stripe | none | 2026-08-23 | primary |
-| [Sublyna](platforms/sublyna.md) | $0 Starter · $29 Creator · $89 Business [^5] | 5% · 2% · 1% | seller's own Stripe, around 2.9% + $0.30 | seller's Stripe | none | 2026-08-23 | primary |
-| [Sublaunch](platforms/sublaunch.md) | $0 Free · $99 Business · $169 Premium [^11] | 15% · 4% · 3% | seller's own Stripe | seller's Stripe | none | 2026-08-26 | primary |
+| [Sublyna](platforms/sublyna.md) | $0 Starter · $29 Creator · $89 Business [^5] | 5% Starter · 2% Creator · 1% Business | seller's own Stripe, around 2.9% + $0.30 | seller's Stripe | none | 2026-08-23 | primary |
+| [Sublaunch](platforms/sublaunch.md) | $0 Free · $99 Business · $169 Premium [^11] | 15% Free · 4% Business · 3% Premium | seller's own Stripe | seller's Stripe | none | 2026-08-26 | primary |
 | [XOE](platforms/xoe.md) | $0 | 0% cards · 5% crypto | seller's own Stripe | seller's Stripe; crypto to wallet | none stated | 2026-08-23 | primary |
-| [Upgrade.chat](platforms/upgrade-chat.md) | $0 / $19 / $49 / $199 [^6] | 5.9% · 4.9% · 3.9% · 2.9% | seller's own PayPal or Stripe | seller's PayPal or Stripe | none | 2026-08-23 | primary |
+| [Upgrade.chat](platforms/upgrade-chat.md) | $0 FREE · $19 PRO · $49 VIP · $199 MAX [^6] | 5.9% FREE · 4.9% PRO · 3.9% VIP · 2.9% MAX | seller's own PayPal or Stripe | seller's PayPal or Stripe | none | 2026-08-23 | primary |
 | [Discord Server Subscriptions](platforms/discord-server-subscriptions.md) | $0 | 10% platform fee [^10] | own, 6% desktop/browser | Discord | not stated | 2026-08-24 | primary |
 | [Patreon](platforms/patreon.md) | $0 | 10% | own, 2.9% + $0.30 | Patreon | direct deposit $0.25 · PayPal 1% (min $0.25, cap $20) · Payoneer $1 | 2026-08-23 | primary |
-| [Ko-fi](platforms/ko-fi.md) | $0, or paid Gold [^7] | 0% tips · 5% memberships and shop | seller's own PayPal or Stripe | seller's account | none | 2026-08-03 | primary |
+| [Ko-fi](platforms/ko-fi.md) | $0 Free · Gold (price not stated) [^7] | 0% tips · 5% memberships and shop | seller's own PayPal or Stripe | seller's account | none | 2026-08-03 | primary |
 | [Skool](platforms/skool.md) | $9 Hobby · $99 Pro | 10% Hobby · 2.9% Pro | no separate line published | not stated | not stated | 2026-08-23 | primary |
 | [Gumroad](platforms/gumroad.md) | $0 | 10% + $0.50 · 30% via Discover | no separate line published | Gumroad | not stated | 2026-08-23 | primary |
 | [Memberful](platforms/memberful.md) | $49 Standard | 4.9% | seller's own Stripe | seller's Stripe | none stated | 2026-08-23 | primary |
-| [Circle](platforms/circle.md) | $89 Pro · $199 Business | 2% · 1% · 0.5% Circle Plus | not stated | not stated | not stated | 2026-08-23 | primary |
+| [Circle](platforms/circle.md) | $89 Professional · $199 Business · custom Circle Plus | 2% Professional · 1% Business · 0.5% Circle Plus | not stated | not stated | not stated | 2026-08-23 | primary |
 | [Tribute](platforms/tribute.md) | $0 | 10% | no separate line published | Tribute | not stated [^8] | 2026-08-23 | primary |
 | [Stripe](platforms/stripe.md) — *processor, for reference* | $0 | — | US 2.9% + $0.30 [^9] | the account that took the charge | — | 2026-08-03 | primary |
 
