@@ -14,13 +14,13 @@ A paid-access layer for Discord taking crypto (USDC on Base and Solana) and card
 | Payout fees | none stated; network gas applies to crypto |
 | Payout timing / minimum | not stated |
 | Other fees | none stated |
-| Verified | 2026-08-23 · primary |
+| Verified | 2026-10-06 · primary |
 
 ## Sources
-- https://xoe.gg — retrieved 2026-08-23 — "0% XOE fee on cards, no subscription, no setup fees"
-- https://xoe.gg/premium — retrieved 2026-08-23 — "Crypto payments on Base Eth & Solana (5% fee)"
-- https://xoe.gg/premium — retrieved 2026-08-23 — "Crypto payouts go to your wallet; card payouts to your Stripe account"
-- https://xoe.gg/premium — retrieved 2026-08-23 — on card sales, "you only pay Stripe's standard processing"
+- https://xoe.gg — retrieved 2026-10-06 — "0% XOE fee on cards, no subscription, no setup fees"
+- https://xoe.gg/premium — retrieved 2026-10-06 — "Crypto payments on Base Eth & Solana (5% fee)"
+- https://xoe.gg/premium — retrieved 2026-10-06 — "Crypto payouts go to your wallet; card payouts to your Stripe account"
+- https://xoe.gg/premium — retrieved 2026-10-06 — on card sales, "you only pay Stripe's standard processing"
 
 ## Notes
 - The two payment rails carry different rates: cards are 0% to XOE, crypto is 5%. A seller's effective cost depends on which rail their members use.

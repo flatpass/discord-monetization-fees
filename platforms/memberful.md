@@ -14,12 +14,12 @@ A membership and paid-newsletter platform. Grants Discord roles through its own 
 | Payout fees | none stated by Memberful; Stripe's payout terms apply |
 | Payout timing / minimum | not stated |
 | Other fees | none stated |
-| Verified | 2026-08-23 · primary |
+| Verified | 2026-10-06 · primary |
 
 ## Sources
-- https://memberful.com/pricing — retrieved 2026-08-23 — "Standard $49 / month + 4.9% transaction fee"; Enterprise "Custom Pricing".
-- https://memberful.com/pricing — retrieved 2026-08-23 — "Try it for free for as long as you like. You'll only be charged when you go live and start accepting payments"
-- https://memberful.com/docs/overview/getting-started/payment-processing.md — retrieved 2026-08-23 — "Memberful uses Stripe to process credit card payments. Connect a Stripe account to accept payments, manage payouts, and handle disputes for your subscriptions"
+- https://memberful.com/pricing — retrieved 2026-10-06 — "Standard $49 / month + 4.9% transaction fee"; Enterprise "Custom Pricing".
+- https://memberful.com/pricing — retrieved 2026-10-06 — "Try it for free for as long as you like. You'll only be charged when you go live and start accepting payments"
+- https://memberful.com/docs/overview/getting-started/payment-processing.md — retrieved 2026-10-06 — "Memberful uses Stripe to process credit card payments. Connect a Stripe account to accept payments, manage payouts, and handle disputes for your subscriptions"
 
 ## Notes
 - The page offers a free trial rather than a free plan: charging starts when the seller goes live and takes payments.

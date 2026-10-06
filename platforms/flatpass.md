@@ -14,14 +14,14 @@ A paid-access layer for Discord, metered on active paid members. Maintains this 
 | Payout fees | none charged by flatpass; Stripe's payout terms apply |
 | Payout timing / minimum | not stated; set by the seller's own Stripe account |
 | Other fees | none |
-| Verified | 2026-08-23 · primary |
+| Verified | 2026-10-06 · primary |
 
 The meter is **active paid members**, not sales volume and not Discord headcount.
 
 ## Sources
-- https://flatpass.io/pricing — retrieved 2026-08-23 — "0% of your revenue — the only meter is active paid members."
-- https://flatpass.io/pricing — retrieved 2026-08-23 — "And past $1,036 a month in sales, it's also cheaper — permanently."
-- https://flatpass.io/pricing — retrieved 2026-08-23 — on annual billing: "No — every tier is billed monthly, and you can cancel anytime."
+- https://flatpass.io/pricing — retrieved 2026-10-06 — "0% of your revenue — the only meter is active paid members."
+- https://flatpass.io/pricing — retrieved 2026-10-06 — "And past $1,036 a month in sales, it's also cheaper — permanently."
+- https://flatpass.io/pricing — retrieved 2026-10-06 — on annual billing: "No — every tier is billed monthly, and you can cancel anytime."
 
 ## Notes
 - **Discord only.** No Telegram, no Slack.

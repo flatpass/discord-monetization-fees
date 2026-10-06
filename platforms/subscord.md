@@ -14,14 +14,14 @@ A paid-access layer for Discord, metered on active subscribers, with card and cr
 | Payout fees | none charged by Subscord; Stripe's payout terms apply |
 | Payout timing / minimum | not stated |
 | Other fees | gas fees on crypto payments |
-| Verified | 2026-08-23 · primary |
+| Verified | 2026-10-06 · primary |
 
 ## Sources
-- https://subscord.com — retrieved 2026-08-23 — "0% platform fees"
-- https://subscord.com — retrieved 2026-08-23 — plan rows: "Free $0/month, Up to 10 active subscribers"; "Pro $39/month, Up to 50"; "Max $65/month, Up to 500"; "Unlimited $199/month".
-- https://subscord.com — retrieved 2026-08-23 — card payments "2.9% + $0.30"; crypto "0.5% fee" plus gas.
+- https://subscord.com — retrieved 2026-10-06 — "0% platform fees"
+- https://subscord.com — retrieved 2026-10-06 — plan rows: "Free $0/month, Up to 10 active subscribers"; "Pro $39/month, Up to 50"; "Max $65/month, Up to 500"; "Unlimited $199/month".
+- https://subscord.com — retrieved 2026-10-06 — card payments "2.9% + $0.30"; crypto "0.5% fee" plus gas.
 
 ## Notes
-- The ladder read on 2026-08-23 is identical to the one read on 2026-08-05. Nothing moved.
-- **Subscord connects to Stripe by asking the seller to paste their Stripe API keys**, per its setup documentation as read on 2026-08-05: "find your Stripe API keys in your Stripe Dashboard and paste the public and secret keys into the respective fields." Several other platforms in this table — flatpass, DoorFee, PayBot — connect over Stripe Connect instead. This is a fact about the connection method, recorded because it is a published difference in how the accounts are linked.
+- The ladder read on 2026-10-06 is identical to the ones read on 2026-08-23 and 2026-08-05. Nothing moved.
+- **Subscord connects to Stripe by asking the seller to paste their Stripe API keys**, per its setup documentation as read on 2026-08-05: "find your Stripe API keys in your Stripe Dashboard and paste the public and secret keys into the respective fields." Re-read on 2026-10-06, the setup docs say to paste the secret key and also accept a restricted key. Several other platforms in this table — flatpass, DoorFee, PayBot — connect over Stripe Connect instead. This is a fact about the connection method, recorded because it is a published difference in how the accounts are linked.
 - Subscord's own site carries a comparison table quoting rates for other platforms. Those figures are not used anywhere in this dataset — see METHODOLOGY on why competitor content is never a source.

@@ -14,11 +14,11 @@ A membership platform for creators. Offers a Discord role connection, but is not
 | Payout fees | direct deposit (ACH/Stripe) $0.25 per payout · PayPal 1%, minimum $0.25, capped at $20 · Payoneer $1.00 per payout |
 | Payout timing / minimum | not stated |
 | Other fees | currency conversion 2.5% on any payment made in a currency different from the payout currency; on iOS in-app purchases Apple's 30% App Store fee applies |
-| Verified | 10% on 2026-08-03; processing and payout fees on 2026-08-23 · primary |
+| Verified | 2026-10-06 · primary |
 
 ## Sources
-- https://www.patreon.com/pricing — retrieved 2026-08-23 — "10% of the income you earn on Patreon" and "Plus payment processing, currency conversion, and payout fees, and applicable taxes."
-- https://support.patreon.com/hc/en-us/articles/11111747095181-Creator-fees-overview — retrieved 2026-08-23 through a render proxy — "Credit card / Apple Pay: Any - 2.9% + $0.30"; "PayPal / Venmo: US - 2.9% + $0.30"; "PayPal / Venmo: Non-US - 3.9% + $0.30"; "Direct Deposit (ACH/Stripe): $0.25 USD per payout"; "PayPal: 1% (minimum of $0.25, capped at $20 USD)"; "Payoneer: $1.00 USD per payout"; "A 2.5% currency conversion fee applies to any payment made in a currency different from your payout currency".
+- https://www.patreon.com/pricing — retrieved 2026-10-06 — "10% of the income you earn on Patreon" and "Plus payment processing, currency conversion, and payout fees, and applicable taxes."
+- https://support.patreon.com/hc/en-us/articles/11111747095181-Creator-fees-overview — retrieved 2026-10-06 through a render proxy — "Credit card / Apple Pay: Any - 2.9% + $0.30"; "PayPal / Venmo: US - 2.9% + $0.30"; "PayPal / Venmo: Non-US - 3.9% + $0.30"; "Direct Deposit (ACH/Stripe): $0.25 USD per payout"; "PayPal: 1% (minimum of $0.25, capped at $20 USD)"; "Payoneer: $1.00 USD per payout"; "A 2.5% currency conversion fee applies to any payment made in a currency different from your payout currency".
 
 ## Notes
 - **The 8% / 12% plan tiers are retired.** Guides still describing Patreon as "8–12% depending on your plan" are quoting a structure that no longer exists.

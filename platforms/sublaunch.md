@@ -14,15 +14,15 @@ A paid-access layer for Telegram, Discord and WhatsApp communities plus hosted c
 | Payout fees | none of Sublaunch's own; Stripe's payout terms apply |
 | Payout timing / minimum | not stated (payouts run in the seller's own Stripe account) |
 | Other fees | none stated |
-| Verified | 2026-08-26 · primary |
+| Verified | 2026-10-06 · primary |
 
 ## Sources
 
-- https://sublaunch.com/#pricing_id — retrieved 2026-08-26 — plan cards and fee row: "Free — To start for free in 5 minutes. Free forever."; "Business — $99 per month"; "Premium — $169 per month"; "Transaction fee — 15% — 4% — 3%".
-- https://sublaunch.com — retrieved 2026-08-26 — FAQ "Are there any fees to use Sublaunch?": "Sublaunch offers a free plan with a 15% commission fee. Paid plans are available, reducing the commission to as low as 3%, based on your volume. Please note that Stripe's processing fees apply in addition to Sublaunch's commissions."
-- https://sublaunch.com — retrieved 2026-08-26 — FAQ "Does upgrading affect current subscription commission fees?": "No, the commission fee for any existing subscriptions will remain the same even if you upgrade your plan. The new commission percentage fee will only apply to future subscriptions created after your plan upgrade."
-- https://sublaunch.com/terms — retrieved 2026-08-26 — "Sublaunch may collect transaction fees based on the plan chosen by the creator. These fees are deducted automatically via Stripe from each transaction."
-- https://sublaunch.com/terms — retrieved 2026-08-26 — "Sublaunch does not hold or manage funds for creators; all funds are processed and delivered directly to creators' Stripe accounts."
+- https://sublaunch.com/#pricing_id — retrieved 2026-10-06 — plan cards and fee row: "Free — To start for free in 5 minutes. Free forever."; "Business — $99 per month"; "Premium — $169 per month"; "Transaction fee — 15% — 4% — 3%".
+- https://sublaunch.com — retrieved 2026-10-06 — FAQ "Are there any fees to use Sublaunch?": "Sublaunch offers a free plan with a 15% commission fee. Paid plans are available, reducing the commission to as low as 3%, based on your volume. Please note that Stripe's processing fees apply in addition to Sublaunch's commissions."
+- https://sublaunch.com — retrieved 2026-10-06 — FAQ "Does upgrading affect current subscription commission fees?": "No, the commission fee for any existing subscriptions will remain the same even if you upgrade your plan. The new commission percentage fee will only apply to future subscriptions created after your plan upgrade."
+- https://sublaunch.com/terms — retrieved 2026-10-06 — "Sublaunch may collect transaction fees based on the plan chosen by the creator. These fees are deducted automatically via Stripe from each transaction."
+- https://sublaunch.com/terms — retrieved 2026-10-06 — "Sublaunch does not hold or manage funds for creators; all funds are processed and delivered directly to creators' Stripe accounts."
 
 ## Notes
 
@@ -31,5 +31,5 @@ A paid-access layer for Telegram, Discord and WhatsApp communities plus hosted c
 - Payments run on the seller's own Stripe account, which the seller creates and connects; the terms put disputes, refunds, chargebacks and tax compliance on the creator, handled directly with Stripe. How the account is connected — Stripe Connect or API keys — is not stated on the page or in the terms.
 - Gates Telegram channels, Discord servers (role-based access) and WhatsApp groups, and hosts online courses natively; Discord access is one product type among several rather than the platform's centre.
 - Stripe is the only stated payment path — the FAQ lists Visa, Mastercard, American Express, Apple Pay and Google Pay through it, and describes PayPal and crypto as "being monitored for future support", not offered.
-- The pricing section and FAQ answers are server-rendered — a plain fetch does get the plan table, unlike Sublyna's and Upgrade.chat's pages. The figures here were read in a browser anyway.
+- The plan table and the FAQ questions are server-rendered, so a plain fetch gets the plan table. The FAQ answers are not: they sit in the page's script bundle and appear only in a browser. The figures here were read in a browser.
 - The terms are operated by MetaStudio LLC, "operating as Sublaunch"; the footer says "Sublaunch, Inc.".

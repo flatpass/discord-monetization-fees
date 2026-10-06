@@ -71,11 +71,11 @@ The pattern is consistent: secondary guides copy each other, and they all copy t
 | Tier | What it means |
 |---|---|
 | `primary` | Read on the platform's own page, terms or docs. Carries a URL and a retrieval date. |
-| `direct-confirmation` | Not published by the platform, but confirmed directly with the platform or from a maintainer's own account, and corroborated by independent breakdowns. **Used for exactly one figure in this repo: Whop's 3% automation fee.** |
+| `direct-confirmation` | Not published by the platform, but confirmed directly with the platform or from a maintainer's own account, and corroborated by independent breakdowns. No figure uses it today; Whop's 3% did until 2026-10-06. |
 | `secondary` | An independent breakdown only, with no primary reading behind it. Labelled as such at the point of use. |
 | `unverified` | No source meeting the bar above. The platform gets a file saying what was attempted and what is known with what confidence, and it appears in `fees.json` with `"verification": "unverified"` and no fee figures — never in the README's table. |
 
-Whop's 3% is the tier's only occupant because it is genuinely unpublished. A reader who opens Whop's pricing page will not find it, and this repo says so on the row rather than quietly presenting the figure as if it were on the page.
+Whop's 3% was the tier's only occupant until 2026-10-06, when it was found stated on the listings of Whop's own Discord, Telegram and TradingView apps and moved to `primary`. The tier currently has no occupant. It stays defined for the next figure a platform charges without publishing. A reader who opens Whop's pricing page will still not find the 3%, and the row says where it is instead.
 
 ## 6. Pages that block automated fetching
 

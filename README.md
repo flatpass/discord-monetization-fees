@@ -4,7 +4,7 @@ A sourced, dated record of what each platform charges to sell paid access to a D
 
 This dataset is maintained by **flatpass** ([flatpass.io](https://flatpass.io)), which sells one of the products in the table below. That is a conflict of interest, so here is how it is handled: every number carries a source URL, a retrieval date and a verification tier; the table includes the rows where flatpass is the more expensive option, and [`platforms/flatpass.md`](platforms/flatpass.md) has a section that names them; corrections are logged in [CHANGELOG.md](CHANGELOG.md) with credit to whoever found them; and anyone can open an issue disputing any figure here. If a number is wrong, the fix is a pull request, not an argument.
 
-Last updated **2026-08-26**.
+Last updated **2026-10-06**.
 
 ## The table
 
@@ -12,35 +12,35 @@ Every row below is either `primary` (read on the platform's own page or terms) o
 
 | Platform | Monthly fee | % of each sale | Card processing | Where the money settles | Payout fees | Verified | Tier |
 |---|---|---|---|---|---|---|---|
-| [Whop](platforms/whop.md) | $0 | 3% [^1] | own, 2.7% + $0.30 | Whop balance | ACH $2.50 · instant 4% + $1 · wire ~$23 | 2026-08-03 | direct-confirmation |
-| [LaunchPass](platforms/launchpass.md) | $29 Premium per community [^2] | 3.5% Premium | seller's own Stripe | seller's Stripe | none | 2026-08-02 | primary |
-| [flatpass](platforms/flatpass.md) | $0 Free · $29 Starter · $79 Growth · $149 Scale · $399 Max [^3] | 0% on every plan | seller's own Stripe | seller's Stripe | none | 2026-08-23 | primary |
-| [Subscord](platforms/subscord.md) | $0 Free · $39 Pro · $65 Max · $199 Unlimited [^4] | 0% on every plan (crypto 0.5% + gas) | seller's own Stripe, 2.9% + $0.30 | seller's Stripe | none | 2026-08-23 | primary |
-| [PayBot](platforms/paybot.md) | $0 | 3% | seller's own Stripe | seller's Stripe | none | 2026-08-23 | primary |
-| [DoorFee](platforms/doorfee.md) | $0 Free · $28 Pro | 10% Free · 2.5% Pro | seller's own Stripe | seller's Stripe | none | 2026-08-23 | primary |
-| [Sublyna](platforms/sublyna.md) | $0 Starter · $29 Creator · $89 Business [^5] | 5% Starter · 2% Creator · 1% Business | seller's own Stripe, around 2.9% + $0.30 | seller's Stripe | none | 2026-08-23 | primary |
-| [Sublaunch](platforms/sublaunch.md) | $0 Free · $99 Business · $169 Premium [^11] | 15% Free · 4% Business · 3% Premium | seller's own Stripe | seller's Stripe | none | 2026-08-26 | primary |
-| [XOE](platforms/xoe.md) | $0 | 0% cards · 5% crypto | seller's own Stripe | seller's Stripe; crypto to wallet | none stated | 2026-08-23 | primary |
-| [Upgrade.chat](platforms/upgrade-chat.md) | $0 FREE · $19 PRO · $49 VIP · $199 MAX [^6] | 5.9% FREE · 4.9% PRO · 3.9% VIP · 2.9% MAX | seller's own PayPal or Stripe | seller's PayPal or Stripe | none | 2026-08-23 | primary |
-| [Discord Server Subscriptions](platforms/discord-server-subscriptions.md) | $0 | 10% platform fee [^10] | own, 6% desktop/browser | Discord | not stated | 2026-08-24 | primary |
-| [Patreon](platforms/patreon.md) | $0 | 10% | own, 2.9% + $0.30 | Patreon | direct deposit $0.25 · PayPal 1% (min $0.25, cap $20) · Payoneer $1 | 2026-08-23 | primary |
-| [Ko-fi](platforms/ko-fi.md) | $0 Free · Gold (price not stated) [^7] | 0% tips · 5% memberships and shop | seller's own PayPal or Stripe | seller's account | none | 2026-08-03 | primary |
-| [Skool](platforms/skool.md) | $9 Hobby · $99 Pro | 10% Hobby · 2.9% Pro | no separate line published | not stated | not stated | 2026-08-23 | primary |
-| [Gumroad](platforms/gumroad.md) | $0 | 10% + $0.50 · 30% via Discover | no separate line published | Gumroad | not stated | 2026-08-23 | primary |
-| [Memberful](platforms/memberful.md) | $49 Standard | 4.9% | seller's own Stripe | seller's Stripe | none stated | 2026-08-23 | primary |
-| [Circle](platforms/circle.md) | $89 Professional · $199 Business · custom Circle Plus | 2% Professional · 1% Business · 0.5% Circle Plus | not stated | not stated | not stated | 2026-08-23 | primary |
-| [Tribute](platforms/tribute.md) | $0 | 10% | no separate line published | Tribute | not stated [^8] | 2026-08-23 | primary |
-| [Stripe](platforms/stripe.md) — *processor, for reference* | $0 | — | US 2.9% + $0.30 [^9] | the account that took the charge | — | 2026-08-03 | primary |
+| [Whop](platforms/whop.md) | $0 | 3% [^1] | own, 2.7% + $0.30 | Whop balance | ACH $2.50 · instant 4% + $1 · wire $23 | 2026-10-06 | primary |
+| [LaunchPass](platforms/launchpass.md) | $29 Premium per community [^2] | 3.5% Premium | seller's own Stripe | seller's Stripe | none | 2026-10-06 | primary |
+| [flatpass](platforms/flatpass.md) | $0 Free · $29 Starter · $79 Growth · $149 Scale · $399 Max [^3] | 0% on every plan | seller's own Stripe | seller's Stripe | none | 2026-10-06 | primary |
+| [Subscord](platforms/subscord.md) | $0 Free · $39 Pro · $65 Max · $199 Unlimited [^4] | 0% on every plan (crypto 0.5% + gas) | seller's own Stripe, 2.9% + $0.30 | seller's Stripe | none | 2026-10-06 | primary |
+| [PayBot](platforms/paybot.md) | $0 | 3% | seller's own Stripe | seller's Stripe | none | 2026-10-06 | primary |
+| [DoorFee](platforms/doorfee.md) | $0 Free · $28 Pro | 10% Free · 2.5% Pro | seller's own Stripe | seller's Stripe | none | 2026-10-06 | primary |
+| [Sublyna](platforms/sublyna.md) | $0 Starter · $29 Creator · $89 Business [^5] | 5% Starter · 2% Creator · 1% Business | seller's own Stripe, around 2.9% + $0.30 | seller's Stripe | none | 2026-10-06 | primary |
+| [Sublaunch](platforms/sublaunch.md) | $0 Free · $99 Business · $169 Premium [^11] | 15% Free · 4% Business · 3% Premium | seller's own Stripe | seller's Stripe | none | 2026-10-06 | primary |
+| [XOE](platforms/xoe.md) | $0 | 0% cards · 5% crypto | seller's own Stripe | seller's Stripe; crypto to wallet | none stated | 2026-10-06 | primary |
+| [Upgrade.chat](platforms/upgrade-chat.md) | $0 FREE · $19 PRO · $49 VIP · $199 MAX [^6] | 5.9% FREE · 4.9% PRO · 3.9% VIP · 2.9% MAX | seller's own PayPal or Stripe | seller's PayPal or Stripe | none | 2026-10-06 | primary |
+| [Discord Server Subscriptions](platforms/discord-server-subscriptions.md) | $0 | 10% platform fee [^10] | own, 6% desktop/browser | Discord | not stated | 2026-10-06 | primary |
+| [Patreon](platforms/patreon.md) | $0 | 10% | own, 2.9% + $0.30 | Patreon | direct deposit $0.25 · PayPal 1% (min $0.25, cap $20) · Payoneer $1 | 2026-10-06 | primary |
+| [Ko-fi](platforms/ko-fi.md) | $0 Standard · $0 Ko-fi free · $12 Gold [^7] | 5% memberships, shop and monthly tips; one-time tips 5% on Standard, 0% on Ko-fi free; 0% on Gold with Standard off | seller's own PayPal or Stripe | seller's account | none | 2026-10-06 | primary |
+| [Skool](platforms/skool.md) | $9 Hobby · $99 Pro | 10% + $0.30 Hobby · 2.9% + $0.30 Pro (3.9% + $0.30 above $900) | included; Skool is the merchant | Skool | not stated | 2026-10-06 | primary |
+| [Gumroad](platforms/gumroad.md) | $0 | 10% + $0.50 · 30% via Discover | no separate line published | Gumroad | not stated | 2026-10-06 | primary |
+| [Memberful](platforms/memberful.md) | $49 Standard | 4.9% | seller's own Stripe | seller's Stripe | none stated | 2026-10-06 | primary |
+| [Circle](platforms/circle.md) | $89 Professional · $199 Business · $419 Scale · custom Circle Plus, billed annually | 2% Professional · 1% Business · 1% Scale · 0.5% Circle Plus | Stripe's, additional; rate not stated | not stated | not stated | 2026-10-06 | primary |
+| [Tribute](platforms/tribute.md) | $0 | 10% · 8% physical products | included, per Tribute | Tribute | none [^8] | 2026-10-06 | primary |
+| [Stripe](platforms/stripe.md) — *processor, for reference* | $0 | — | US 2.9% + $0.30 [^9] | the account that took the charge | — | 2026-10-06 | primary |
 
-[^1]: Whop's 3% applies to sales that run through an automation — Discord, Telegram or TradingView gating. For a Discord seller that is every sale, so the all-in base is 5.7% + $0.30. **It is not on Whop's public pricing page.**
+[^1]: Whop's 3% applies to sales that run through an automation — Discord, Telegram or TradingView gating. For a Discord seller that is every sale, so the all-in base is 5.7% + $0.30. **It is not on Whop's pricing page**; it is stated on the listing of each Whop app that applies it.
 [^2]: LaunchPass's Free plan cannot charge members. Premium is $29/month per community, so two servers cost twice.
 [^3]: flatpass is metered on active paid members: free to 15, then $29 to 80, $79 to 200, $149 to 750, $399 uncapped.
 [^4]: Subscord is metered on active subscribers: free to 10, then $39 to 50, $65 to 500, $199 uncapped.
 [^5]: Sublyna's transaction fee falls as the monthly price rises: Starter free with 5%, Creator $29 with 2%, Business $89 with 1%. Annual billing is displayed as $23 and $71 a month. Every price carries an "Early Adopter" label. Sublyna's "just 1%" headline is the Business rate, which costs $89/month.
 [^6]: Upgrade.chat is metered on subscribers: FREE to 500 at 5.9%, PRO $19 to 1,000 at 4.9%, VIP $49 to 2,500 at 3.9%, MAX $199 uncapped at 2.9%. Those are the discounted prices the page displays, against list prices of $39, $99 and $399; each paid plan also offers a lifetime price.
-[^7]: Gold waives the 5%. Its monthly price is quoted as both $6 and $12 across 2026 guides, so this dataset does not state it.
-[^8]: Tribute pays out on the 25th and the 10th, with a €100 minimum for bank card payouts.
-[^9]: Standard EEA 1.5% + €0.25 · UK 2.5% + €0.25 · international 3.15% + €0.25 · +2% on currency conversion.
+[^7]: Standard is the default for new creators and takes 5% of one-time tips too; switching it off (Settings > Payment) leaves Ko-fi free, 0% on one-time tips. Gold, $12/month, waives the fee only with Standard off.
+[^8]: Tribute pays out on the 25th and the 10th, with a €100 minimum for bank card payouts. Creators Tribute designates Special Category pay 20%.
+[^9]: Standard EEA 1.5% + €0.25 · UK 2.5% + €0.25 · international 3.15% + €0.25 · currency conversion +2% on an EEA account, +1% on a US account.
 [^11]: Sublaunch's commission falls as the monthly price rises: Free with 15%, Business $99 with 4%, Premium $169 with 3%, Stripe additional on the seller's own account. The 15% is the highest free-tier rate in this table. A subscription keeps the commission rate it was created under — upgrading reprices only future subscribers. A different product from Sublyna, despite the name.
 [^10]: **Do not add Discord's 10% to its 6%.** The Fees section above Schedule 1 puts the Payment Processing Fee on the gross payment but the Platform Fee on that payment *less* applicable transaction taxes, Payment Processing Fees and Transaction Fees. So the 10% is 9.4% of a sale and Discord's all-in take is **15.4%**, not 16%. The "90/10 split" stays accurate — it is 10% of the remainder.
 
@@ -97,7 +97,7 @@ Redo any of these with the numbers in [`data/fees.json`](data/fees.json).
 
 No platform is currently listed here: every row in [`data/fees.json`](data/fees.json) now has a primary reading behind it. A platform whose own pages cannot be read goes here, with `"verification": "unverified"` and no fee figures, until someone reads them.
 
-Also wanted, on rows that are otherwise verified: Ko-fi Gold's current monthly price; Skool's and Circle's payout terms; whether Circle publishes a processing rate anywhere.
+Also wanted, on rows that are otherwise verified: Circle's payout terms and processing rate; Circle's month-to-month prices.
 
 ## Contributing
 
