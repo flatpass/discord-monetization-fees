@@ -4,7 +4,7 @@ A sourced, dated record of what each platform charges to sell paid access to a D
 
 This dataset is maintained by **flatpass** ([flatpass.io](https://flatpass.io)), which sells one of the products in the table below. That is a conflict of interest, so here is how it is handled: every number carries a source URL, a retrieval date and a verification tier; the table includes the rows where flatpass is the more expensive option, and [`platforms/flatpass.md`](platforms/flatpass.md) has a section that names them; corrections are logged in [CHANGELOG.md](CHANGELOG.md) with credit to whoever found them; and anyone can open an issue disputing any figure here. If a number is wrong, the fix is a pull request, not an argument.
 
-Last updated **2026-10-06**.
+Last updated **2026-10-08**.
 
 ## The table
 
@@ -24,7 +24,7 @@ Every row below is either `primary` (read on the platform's own page or terms) o
 | [Upgrade.chat](platforms/upgrade-chat.md) | $0 FREE · $19 PRO · $49 VIP · $199 MAX [^6] | 5.9% FREE · 4.9% PRO · 3.9% VIP · 2.9% MAX | seller's own PayPal or Stripe | seller's PayPal or Stripe | none | 2026-10-06 | primary |
 | [Discord Server Subscriptions](platforms/discord-server-subscriptions.md) | $0 | 10% platform fee [^10] | own, 6% desktop/browser | Discord | not stated | 2026-10-06 | primary |
 | [Patreon](platforms/patreon.md) | $0 | 10% | own, 2.9% + $0.30 | Patreon | direct deposit $0.25 · PayPal 1% (min $0.25, cap $20) · Payoneer $1 | 2026-10-06 | primary |
-| [Ko-fi](platforms/ko-fi.md) | $0 Standard · $0 Ko-fi free · $12 Gold [^7] | 5% memberships, shop and monthly tips; one-time tips 5% on Standard, 0% on Ko-fi free; 0% on Gold with Standard off | seller's own PayPal or Stripe | seller's account | none | 2026-10-06 | primary |
+| [Ko-fi](platforms/ko-fi.md) | $0 Standard · $0 Ko-fi free · $12 Gold [^7] | 5% memberships, shop and monthly tips; one-time tips 5% on Standard, 0% on Ko-fi free; 0% on Gold with Standard off; Discord rewards need Standard, so 5% on everything for a Discord role seller | seller's own PayPal or Stripe | seller's account | none | 2026-10-06 | primary |
 | [Skool](platforms/skool.md) | $9 Hobby · $99 Pro | 10% + $0.30 Hobby · 2.9% + $0.30 Pro (3.9% + $0.30 above $900) | included; Skool is the merchant | Skool | not stated | 2026-10-06 | primary |
 | [Gumroad](platforms/gumroad.md) | $0 | 10% + $0.50 · 30% via Discover | no separate line published | Gumroad | not stated | 2026-10-06 | primary |
 | [Memberful](platforms/memberful.md) | $49 Standard | 4.9% | seller's own Stripe | seller's Stripe | none stated | 2026-10-06 | primary |
@@ -38,7 +38,7 @@ Every row below is either `primary` (read on the platform's own page or terms) o
 [^4]: Subscord is metered on active subscribers: free to 10, then $39 to 50, $65 to 500, $199 uncapped.
 [^5]: Sublyna's transaction fee falls as the monthly price rises: Starter free with 5%, Creator $29 with 2%, Business $89 with 1%. Annual billing is displayed as $23 and $71 a month. Every price carries an "Early Adopter" label. Sublyna's "just 1%" headline is the Business rate, which costs $89/month.
 [^6]: Upgrade.chat is metered on subscribers: FREE to 500 at 5.9%, PRO $19 to 1,000 at 4.9%, VIP $49 to 2,500 at 3.9%, MAX $199 uncapped at 2.9%. Those are the discounted prices the page displays, against list prices of $39, $99 and $399; each paid plan also offers a lifetime price.
-[^7]: Standard is the default for new creators and takes 5% of one-time tips too; switching it off (Settings > Payment) leaves Ko-fi free, 0% on one-time tips. Gold, $12/month, waives the fee only with Standard off.
+[^7]: Standard is the default for new creators and takes 5% of one-time tips too; switching it off (Settings > Payment) leaves Ko-fi free, 0% on one-time tips. Gold, $12/month, waives the fee only with Standard off, and Discord rewards need Standard on, so a seller selling Discord roles pays 5% on Gold too.
 [^8]: Tribute pays out on the 25th and the 10th, with a €100 minimum for bank card payouts. Creators Tribute designates Special Category pay 20%.
 [^9]: Standard EEA 1.5% + €0.25 · UK 2.5% + €0.25 · international 3.15% + €0.25 · currency conversion +2% on an EEA account, +1% on a US account.
 [^11]: Sublaunch's commission falls as the monthly price rises: Free with 15%, Business $99 with 4%, Premium $169 with 3%, Stripe additional on the seller's own account. The 15% is the highest free-tier rate in this table. A subscription keeps the commission rate it was created under — upgrading reprices only future subscribers. A different product from Sublyna, despite the name.

@@ -64,4 +64,10 @@ Every row was re-read against its own sources on 2026-10-06, and its `verified_o
 
 Also noted without changing a figure: Subscord's Stripe setup page accepts a restricted API key as an alternative to the secret key; Sublyna's pricing page carries a banner offering early adopters 0% through early 2026 beside a plan table that charges 5% / 2% / 1%, and the table's rates are what this dataset records.
 
+## 2026-10-08 — Ko-fi's Discord rewards need Standard
+
+| Date | Platform | Previously stated | Corrected to | Source | Found by |
+|---|---|---|---|---|---|
+| 2026-10-08 | Ko-fi | 0% on Gold with Standard off, with no limit on who can use it | **Not for a Discord role seller.** Discord rewards need the Standard plan, which takes 5% of every payment type, so Gold's waiver does not reach a seller selling Discord roles | help.ko-fi.com, "How do supporters join my Discord server?" | maintainer, reading the primary source |
+
 Corrections are credited here by name or handle if the reporter wants — open an issue.

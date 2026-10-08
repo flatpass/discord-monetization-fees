@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-06",
+  "updated": "2026-10-08",
   "license": "CC-BY-4.0",
   "maintainer": {
     "name": "flatpass",
@@ -902,7 +902,7 @@
       "verification": "primary",
       "monthly_fee_usd": 0,
       "pct_of_sale": 5.0,
-      "pct_scope": "memberships, shop sales, commissions and monthly tips; one-time tips too on Standard, the default for new creators, which can be switched off; waived on the paid Gold plan with Standard off",
+      "pct_scope": "memberships, shop sales, commissions and monthly tips; one-time tips too on Standard, the default for new creators, which can be switched off; waived on the paid Gold plan with Standard off, which Discord rewards rule out",
       "processing": {
         "by": "seller_paypal_or_stripe",
         "pct": null,
@@ -916,6 +916,7 @@
       "notes": [
         "Standard, the default for new creators, takes 5% of every payment type, one-time tips included. It can be switched off any time in Settings > Payment, which leaves Ko-fi free: 0% on one-time tips and crowdfunding goals, 5% on monthly tips, memberships, shop sales and commissions. A membership pays 5% either way.",
         "Gold is $12/month with a 0% service fee, but only with Standard off: a creator who subscribes to Gold with Standard on has to switch it off separately to remove the fee.",
+        "Discord rewards need Standard on, so a seller selling Discord roles pays 5% on every payment type, on Gold too. Ko-fi prompts the switch when a server is added.",
         "ko-fi.com/pricing returns 403 to an automated fetcher and was read in a browser."
       ],
       "sources": [
@@ -947,6 +948,12 @@
           "url": "https://help.ko-fi.com/hc/en-us/articles/360002506494-Does-Ko-fi-take-a-fee",
           "retrieved": "2026-10-06",
           "quote": "If you already have this switched on when you subscribe to Gold, you'll need to opt out separately to remove the service fee.",
+          "type": "primary"
+        },
+        {
+          "url": "https://help.ko-fi.com/hc/en-us/articles/8664701197073-How-do-supporters-join-my-Discord-server",
+          "retrieved": "2026-10-08",
+          "quote": "To offer Discord rewards to your supporters, you'll need to be on the Standard plan.",
           "type": "primary"
         }
       ]
